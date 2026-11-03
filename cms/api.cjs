@@ -2,6 +2,8 @@ const crypto = require('node:crypto');
 const {promisify} = require('node:util');
 const scrypt = promisify(crypto.scrypt);
 const attempts = new Map();
+const SESSION_MS=2*3600000;
+const credentialVersion=()=>crypto.createHash('sha256').update(process.env.CMS_PASSWORD_HASH||'').digest('hex');
 const COOKIE = '__Host-business-admin';
 const fail = (status, message) => Object.assign(new Error(message), {status});
 const safeEqual = (a,b) => {const x=Buffer.from(String(a)),y=Buffer.from(String(b));return x.length===y.length && crypto.timingSafeEqual(x,y);};
@@ -9,8 +11,8 @@ const envReady = () => ['CMS_PASSWORD_HASH','CMS_SESSION_SECRET','CMS_GITHUB_TOK
 const sign = value => crypto.createHmac('sha256',process.env.CMS_SESSION_SECRET).update(value).digest('base64url');
 function session(req){
   const raw=(req.headers.cookie||'').split(';').map(x=>x.trim()).find(x=>x.startsWith(COOKIE+'='))?.slice(COOKIE.length+1);
-  if(!raw)return null;const [body,sig]=raw.split('.');if(!body||!sig||!safeEqual(sign(body),sig))return null;
-  try{const v=JSON.parse(Buffer.from(body,'base64url').toString());return v.exp>Date.now()&&typeof v.csrf==='string'?v:null;}catch{return null;}
+  if(!raw||raw.length>1024)return null;const parts=raw.split('.');if(parts.length!==2)return null;const [body,sig]=parts;if(!body||!sig||!safeEqual(sign(body),sig))return null;
+  try{const v=JSON.parse(Buffer.from(body,'base64url').toString());return Number.isFinite(v.exp)&&v.exp>Date.now()&&v.exp<=Date.now()+SESSION_MS&&/^[a-f0-9]{48}$/.test(v.csrf||'')&&safeEqual(v.version||'',credentialVersion())?v:null;}catch{return null;}
 }
 function validImage(value){return typeof value==='string'&&value.length<2048&&(/^(?:\/)?assets\/[a-zA-Z0-9_./-]+\.(?:webp|png|jpe?g|avif)$/i.test(value)&&!value.includes('..') || /^https:\/\/[^\s<>"'\\]+$/i.test(value));}
 function validate(data){
@@ -48,11 +50,13 @@ async function github(config,path,method='GET',body){
 }
 async function read(config,path){const f=await github(config,'contents/'+path+'?ref='+encodeURIComponent(config.branch));return f?{sha:f.sha,data:JSON.parse(Buffer.from(f.content,'base64').toString('utf8'))}:null;}
 async function put(config,path,content,message,sha){return github(config,'contents/'+path,'PUT',{message,branch:config.branch,content:Buffer.from(content).toString('base64'),...(sha?{sha}:{})});}
-async function bodyOf(req){if(req.body!==undefined){if(typeof req.body==='string'){if(req.body.length>3000000)throw fail(413,'Arquivo muito grande.');try{return JSON.parse(req.body);}catch{throw fail(400,'Solicitação inválida.');}}return req.body;}let body='';for await(const chunk of req){body+=chunk;if(body.length>3000000)throw fail(413,'Arquivo muito grande.');}try{return JSON.parse(body||'{}');}catch{throw fail(400,'Solicitação inválida.');}}
+async function bodyOf(req){if(req.body!==undefined){if(JSON.stringify(req.body).length>3000000)throw fail(413,'Arquivo muito grande.');if(typeof req.body==='string'){if(req.body.length>3000000)throw fail(413,'Arquivo muito grande.');try{return JSON.parse(req.body);}catch{throw fail(400,'Solicitação inválida.');}}return req.body;}let body='';for await(const chunk of req){body+=chunk;if(body.length>3000000)throw fail(413,'Arquivo muito grande.');}try{return JSON.parse(body||'{}');}catch{throw fail(400,'Solicitação inválida.');}}
 function makeHandler(config){return async(req,res)=>{
-  res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Content-Type','application/json; charset=utf-8');
+  res.setHeader('Cache-Control','no-store');res.setHeader('Referrer-Policy','no-referrer');res.setHeader('X-Frame-Options','DENY');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Content-Type','application/json; charset=utf-8');
   const send=(status,value)=>{res.statusCode=status;res.end(JSON.stringify(value));};
   try{
+    if(!['GET','POST'].includes(req.method))throw fail(405,'Método não permitido.');
+    if(req.headers['sec-fetch-site']==='cross-site')throw fail(403,'Origem não autorizada.');
     const action=new URL(req.url,'https://'+config.host).searchParams.get('action')||'session';
     if(action==='status'&&req.method==='GET')return send(200,{configured:envReady(),brand:config.name});
     if(!envReady())return send(503,{error:'O painel está protegido e aguarda ativação pelo responsável.',setupRequired:true});
@@ -66,7 +70,7 @@ function makeHandler(config){return async(req,res)=>{
       const input=await bodyOf(req);if(typeof input.password!=='string'||input.password.length>256)throw fail(401,'Usuário ou senha incorretos.');
       const [scheme,salt,hash]=process.env.CMS_PASSWORD_HASH.split('$');if(scheme!=='scrypt'||!/^[a-f0-9]{32}$/.test(salt)||!/^[a-f0-9]{128}$/.test(hash))throw fail(503,'A configuração de acesso precisa ser concluída.');
       const derived=(await scrypt(input.password,salt,64)).toString('hex');if(!safeEqual(derived,hash)||!safeEqual(input.username||'',process.env.CMS_USERNAME||'admin'))throw fail(401,'Usuário ou senha incorretos.');attempts.delete(ip);
-      const value={exp:Date.now()+8*3600000,csrf:crypto.randomBytes(24).toString('hex')};const encoded=Buffer.from(JSON.stringify(value)).toString('base64url');res.setHeader('Set-Cookie',COOKIE+'='+encoded+'.'+sign(encoded)+'; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=28800');return send(200,{authenticated:true,csrf:value.csrf});
+      const value={version:credentialVersion(),exp:Date.now()+SESSION_MS,csrf:crypto.randomBytes(24).toString('hex')};const encoded=Buffer.from(JSON.stringify(value)).toString('base64url');res.setHeader('Set-Cookie',COOKIE+'='+encoded+'.'+sign(encoded)+'; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=7200');return send(200,{authenticated:true,csrf:value.csrf});
     }
     if(!state)throw fail(401,'Entre no painel para continuar.');
     if(req.method!=='GET'&&!safeEqual(req.headers['x-csrf-token']||'',state.csrf))throw fail(403,'Sessão inválida. Entre novamente.');
@@ -92,4 +96,4 @@ function makeHandler(config){return async(req,res)=>{
     throw fail(405,'Ação não disponível.');
   }catch(error){send(error.status||500,{error:error.status?error.message:'Não foi possível concluir. Tente novamente.'});}
 };}
-module.exports={makeHandler,validate,validImage,onlyMenu};
+module.exports={makeHandler,validate,validImage,onlyMenu,session};
