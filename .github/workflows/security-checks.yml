@@ -2,6 +2,8 @@ name: Menu security and build checks
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - cms/auth-sessions.json
   pull_request:
 permissions:
   contents: read
