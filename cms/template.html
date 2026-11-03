@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#0B112B" name="theme-color"/>
+<link href="/assets/menu-promotions.css" rel="stylesheet"/></head><body>
+<title>Cardápio Center Chic</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+/* Layout: cardápio de padaria clássica — capa azul-marinho com o brasão e filete dourado,
+   categorias com foto grudadas no topo, pratos em cartões brancos e títulos com ornamento dourado. */
+:root{
+  --fundo:#FBFAF7;
+  --cartao:#FFFFFF;
+  --tinta:#10183A;
+  --tinta-2:#2A3152;
+  --suave:#6B6F86;
+  --vinho:#8E1530;
+  --vinho-vivo:#A8193A;
+  --vinho-claro:#F7E9ED;
+  --ouro:#B8862B;
+  --ouro-vivo:#D4A544;
+  --ouro-claro:#EAD7A8;
+  --linha:#ECE6DA;
+  --sombra:0 1px 2px rgba(16,24,58,.05),0 10px 24px -14px rgba(16,24,58,.22);
+  --f-display:"Cinzel","Trajan Pro",Georgia,serif;
+  --f-texto:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--f-texto);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+a{color:inherit}
+.embrulho{max-width:780px;margin:0 auto;padding-inline:16px}
+
+/* ================= Capa ================= */
+.capa{position:relative;color:#fff;background:
+  radial-gradient(120% 90% at 50% -10%,#24306A 0%,#10183A 58%,#0B112B 100%);
+  overflow:hidden;text-align:center}
+.capa::before{content:"";position:absolute;inset:0;opacity:.07;background-image:
+  radial-gradient(circle at 25% 25%,#EAD7A8 1.2px,transparent 1.6px),
+  radial-gradient(circle at 75% 75%,#EAD7A8 1.2px,transparent 1.6px);background-size:26px 26px}
+.capa .embrulho{position:relative;padding-block:26px 30px}
+.brasao{width:104px;height:104px;margin:0 auto;border-radius:50%;padding:3px;
+  background:conic-gradient(from 210deg,var(--ouro-claro),var(--ouro),#F5E6BE,var(--ouro),var(--ouro-claro));
+  box-shadow:0 14px 34px -10px rgba(0,0,0,.55)}
+.brasao img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid #0B112B}
+.capa .rotulo{margin:14px 0 0;font-family:var(--f-display);font-size:11px;letter-spacing:.34em;color:var(--ouro-claro)}
+.capa h1{margin:4px 0 0;font-family:var(--f-display);font-weight:700;font-size:clamp(32px,9vw,44px);letter-spacing:.04em;line-height:1.05}
+.ornamento{display:flex;align-items:center;justify-content:center;gap:10px;margin:12px auto 0;color:var(--ouro-vivo)}
+.ornamento::before,.ornamento::after{content:"";height:1px;width:56px;background:linear-gradient(90deg,transparent,currentColor)}
+.ornamento::after{transform:scaleX(-1)}
+.ornamento svg{width:16px;height:16px}
+.capa .sub{margin:10px auto 0;max-width:34ch;font-size:15px;color:#C9CDE0}
+.capa .acoes{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pilula{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 16px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:700}
+.pilula svg{width:16px;height:16px}
+.pilula.ouro{background:var(--ouro-vivo);color:#1B1405}
+.pilula.vidro{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(234,215,168,.35)}
+.pilula:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.status{display:inline-flex;align-items:center;gap:8px;margin:14px auto 0;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(234,215,168,.3);font-size:13px;font-weight:700;color:#E7E9F3}
+.status i{width:8px;height:8px;border-radius:50%;background:#4ADE80;box-shadow:0 0 0 4px rgba(74,222,128,.18)}
+.status.fechado i{background:#F87171;box-shadow:0 0 0 4px rgba(248,113,113,.18)}
+.info{display:grid;gap:10px;max-width:420px;margin:18px auto 0;text-align:left}
+.info a,.info div{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--cartao);border:1px solid var(--linha);color:var(--tinta);text-decoration:none;font-size:14px;line-height:1.4}
+.info svg{width:18px;height:18px;flex:none;margin-top:1px;color:var(--ouro)}
+.info b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave)}
+.faixa{height:5px;background:linear-gradient(90deg,var(--vinho) 0 33%,var(--ouro-vivo) 33% 67%,var(--tinta) 67%)}
+
+/* ================= Barra fixa: busca + categorias ================= */
+.barra{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:rgba(251,250,247,.94);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--linha)}
+.barra .embrulho{padding-block:10px 10px;display:grid;gap:10px}
+.busca{display:flex;align-items:center;gap:10px;height:46px;border-radius:14px;padding:0 14px;background:var(--cartao);box-shadow:var(--sombra);border:1px solid var(--linha)}
+.busca input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:16px;color:var(--tinta);outline:none}
+.busca input::placeholder{color:#9A9DB0}
+.busca svg{width:18px;height:18px;color:var(--ouro);flex:none}
+.busca:focus-within{border-color:var(--ouro)}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 4px;border-radius:999px;border:1px solid var(--linha);background:var(--cartao);font-size:14px;font-weight:700;color:var(--tinta);cursor:pointer;white-space:nowrap}
+.chip .bol{width:32px;height:32px;border-radius:50%;overflow:hidden;background:var(--vinho-claro);display:grid;place-items:center;flex:none;font-family:var(--f-display);font-size:13px;color:var(--vinho)}
+.chip .bol img{width:100%;height:100%;object-fit:cover}
+.chip[aria-current="true"]{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.chip[aria-current="true"] .bol{box-shadow:0 0 0 2px var(--ouro-vivo)}
+.chip:focus-visible{outline:2px solid var(--vinho);outline-offset:2px}
+
+/* ================= Títulos de seção ================= */
+.titulo-secao{text-align:center;padding-top:34px}
+.titulo-secao .orn{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--ouro)}
+.titulo-secao .orn::before,.titulo-secao .orn::after{content:"";height:1px;flex:0 1 70px;background:linear-gradient(90deg,transparent,var(--ouro-claro))}
+.titulo-secao .orn::after{transform:scaleX(-1)}
+.titulo-secao .orn svg{width:14px;height:14px}
+.titulo-secao h2{margin:8px 0 0;font-family:var(--f-display);font-weight:700;font-size:23px;letter-spacing:.06em;text-wrap:balance}
+.titulo-secao .qtd{margin:2px 0 0;font-size:13px;color:var(--suave)}
+.nota{margin:12px auto 0;max-width:52ch;text-align:center;font-size:14px;color:var(--ouro);font-weight:600}
+
+/* ================= Destaques ================= */
+.carrossel{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:16px -16px 0;padding:4px 16px 8px}
+.carrossel::-webkit-scrollbar{display:none}
+.destaque{flex:none;width:min(78%,300px);scroll-snap-align:start;position:relative;border:0;padding:0;border-radius:22px;overflow:hidden;text-align:left;cursor:pointer;background:var(--tinta);color:#fff;box-shadow:0 18px 30px -18px rgba(16,24,58,.6)}
+.destaque img{width:100%;aspect-ratio:4/3.3;object-fit:cover;display:block}
+.destaque .veu{position:absolute;inset:auto 0 0 0;padding:44px 16px 14px;background:linear-gradient(180deg,transparent,rgba(11,17,43,.92) 55%)}
+.destaque .cat{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro-claro)}
+.destaque strong{display:block;font-family:var(--f-display);font-size:20px;letter-spacing:.03em;margin-top:2px}
+.destaque .preco{position:absolute;top:12px;right:12px;background:#fff;color:var(--vinho);font-weight:800;font-size:15px;padding:6px 11px;border-radius:999px;font-variant-numeric:tabular-nums;box-shadow:0 6px 14px -6px rgba(0,0,0,.4)}
+.destaque:focus-visible{outline:3px solid var(--ouro-vivo);outline-offset:2px}
+
+/* ================= Itens ================= */
+.itens{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}
+@media (min-width:700px){.itens.foto{grid-template-columns:1fr 1fr}}
+.item{display:grid;grid-template-columns:92px minmax(0,1fr);gap:0 14px;align-items:stretch;background:var(--cartao);border-radius:18px;padding:10px;box-shadow:var(--sombra);cursor:pointer;border:1px solid transparent;transition:border-color .15s ease,transform .15s ease}
+.item:hover{border-color:var(--ouro-claro)}
+.item:focus-visible{outline:2px solid var(--vinho);outline-offset:2px}
+.item .foto{width:92px;height:92px;border-radius:14px;overflow:hidden;background:var(--vinho-claro)}
+.item .foto img{width:100%;height:100%;object-fit:cover;display:block}
+.item .texto{display:flex;flex-direction:column;min-width:0;padding:2px 0}
+.item .nome{font-weight:700;font-size:16px;line-height:1.25}
+.item .desc{margin:4px 0 0;font-size:13.5px;color:var(--suave);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.item .pe{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.item .preco{font-weight:800;color:var(--vinho);font-size:16px;font-variant-numeric:tabular-nums}
+.item .preco small{font-weight:600;color:var(--suave);font-size:12px}
+.mais{width:36px;height:36px;border-radius:50%;border:0;background:var(--tinta);color:#fff;display:grid;place-items:center;cursor:pointer;flex:none;position:relative;transition:transform .15s ease}
+.mais svg{width:16px;height:16px}
+.mais[data-qtd]:not([data-qtd="0"]){background:var(--ouro-vivo);color:#1B1405}
+.mais[data-qtd]:not([data-qtd="0"])::after{content:attr(data-qtd);position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;border-radius:10px;background:var(--vinho);color:#fff;font-size:11px;font-weight:800;display:grid;place-items:center;padding:0 5px;border:2px solid #fff}
+.mais:focus-visible{outline:2px solid var(--vinho);outline-offset:2px}
+.pulso{animation:pulso .35s ease}
+@keyframes pulso{50%{transform:scale(1.18)}}
+@media (prefers-reduced-motion:reduce){.pulso{animation:none}.item{transition:none}}
+
+/* Categorias sem foto: lista clássica com pontilhado, num cartão só */
+.lista-classica{list-style:none;margin:16px 0 0;padding:4px 16px;background:var(--cartao);border-radius:18px;box-shadow:var(--sombra)}
+.lista-classica li{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:2px 12px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--linha);cursor:pointer}
+.lista-classica li:last-child{border-bottom:0}
+.lista-classica .nome{display:flex;align-items:baseline;gap:8px;font-weight:700;min-width:0}
+.lista-classica .nome::after{content:"";flex:1;min-width:14px;border-bottom:2px dotted var(--ouro-claro);transform:translateY(-4px)}
+.lista-classica .desc{grid-column:1;margin:0;font-size:13.5px;color:var(--suave)}
+.lista-classica .preco{grid-row:1/3;grid-column:2;font-weight:800;color:var(--vinho);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lista-classica .preco small{font-weight:600;color:var(--suave);font-size:12px}
+.lista-classica .mais{grid-row:1/3;grid-column:3}
+.grupo{margin:18px 0 0;font-family:var(--f-display);font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--vinho);text-align:center}
+.vazio{padding:48px 0;text-align:center;color:var(--suave)}
+
+/* ================= Rodapé ================= */
+.rodape{margin-top:44px;padding-block:30px 130px;text-align:center;color:var(--suave);font-size:14px;border-top:1px solid var(--linha)}
+.rodape .brasao{width:58px;height:58px;box-shadow:none;animation:none}
+.rodape .brasao::after{display:none}
+.rodape strong{color:var(--tinta)}
+.rodape .fino{margin-top:14px;font-size:12px}
+
+/* ================= Controle de quantidade no cartão ================= */
+.ctrl{display:inline-flex;align-items:center}
+.passo{display:inline-flex;align-items:center;gap:2px;background:var(--tinta);border-radius:999px;padding:3px;color:#fff;animation:abre .18s ease}
+.passo button{width:30px;height:30px;border-radius:50%;border:0;background:transparent;color:#fff;font-size:18px;font-weight:800;cursor:pointer;display:grid;place-items:center}
+.passo button:hover{background:rgba(255,255,255,.12)}
+.passo button:focus-visible{outline:2px solid var(--ouro-vivo)}
+.passo span{min-width:20px;text-align:center;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ouro-claro)}
+@keyframes abre{from{transform:scale(.8);opacity:0}}
+
+/* ================= Aviso rápido ================= */
+.aviso{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:15;display:flex;align-items:center;gap:12px;max-width:calc(100% - 32px);background:#fff;color:var(--tinta);border-radius:14px;padding:10px 10px 10px 14px;box-shadow:0 14px 30px -10px rgba(16,24,58,.45);border:1px solid var(--linha);font-size:14px;font-weight:600;animation:sobeAviso .25s ease}
+.aviso b{color:var(--vinho)}
+.aviso button{border:0;background:var(--vinho-claro);color:var(--vinho);font-weight:800;border-radius:10px;padding:8px 10px;cursor:pointer;white-space:nowrap}
+@keyframes sobeAviso{from{transform:translate(-50%,12px);opacity:0}}
+
+/* ================= Voltar ao topo ================= */
+.topo-btn{position:fixed;right:16px;bottom:calc(86px + env(safe-area-inset-bottom,0px));z-index:9;width:44px;height:44px;border-radius:50%;border:1px solid var(--linha);background:#fff;color:var(--tinta);box-shadow:var(--sombra);display:grid;place-items:center;cursor:pointer}
+.topo-btn.sozinho{bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+.topo-btn svg{width:18px;height:18px}
+
+/* ================= Minha comanda ================= */
+.barra-lista{position:fixed;left:0;right:0;bottom:0;z-index:10;padding:10px 16px calc(12px + env(safe-area-inset-bottom,0px));pointer-events:none}
+.barra-lista button{pointer-events:auto;max-width:748px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;height:58px;border:0;border-radius:18px;background:var(--tinta);color:#fff;padding:0 18px 0 12px;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 16px 30px -12px rgba(16,24,58,.7)}
+.barra-lista .conta{display:inline-grid;place-items:center;min-width:34px;height:34px;border-radius:12px;background:var(--ouro-vivo);color:#1B1405;font-size:15px;font-weight:800;margin-right:10px;padding:0 6px}
+.barra-lista .total{font-variant-numeric:tabular-nums;color:var(--ouro-claro)}
+.barra-lista .rot{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.barra-lista .rot small{font-size:12px;font-weight:600;color:#AEB3CC}
+.barra-lista button:focus-visible{outline:3px solid var(--ouro-vivo);outline-offset:2px}
+
+.fundo-folha{position:fixed;inset:0;background:rgba(11,17,43,.55);z-index:20;animation:aparece .2s ease}
+.folha{position:fixed;left:0;right:0;bottom:0;z-index:21;background:var(--cartao);border-radius:26px 26px 0 0;max-height:88%;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -20px 50px -20px rgba(0,0,0,.4);animation:sobe .28s cubic-bezier(.2,.8,.2,1)}
+.brasao{animation:entra .7s cubic-bezier(.2,.8,.2,1) both}
+.capa .rotulo,.capa h1,.capa .ornamento{animation:sobeTexto .6s ease both}
+.capa h1{animation-delay:.08s}.capa .ornamento{animation-delay:.16s}
+@keyframes entra{from{transform:scale(.7) rotate(-8deg);opacity:0}}
+@keyframes sobeTexto{from{transform:translateY(8px);opacity:0}}
+.brasao{position:relative}
+.brasao::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 35%,rgba(255,244,210,.65) 50%,transparent 65%);background-size:250% 100%;background-position:120% 0;animation:brilho 1.6s .6s ease both;pointer-events:none}
+@keyframes brilho{to{background-position:-60% 0}}
+@media (prefers-reduced-motion:reduce){.brasao,.brasao::after,.capa .rotulo,.capa h1,.capa .ornamento,.passo,.aviso,.atendente{animation:none}}
+@media (min-width:760px){.folha{left:50%;right:auto;bottom:24px;width:520px;border-radius:26px;margin-left:-260px;max-height:82%}}
+@keyframes sobe{from{transform:translateY(40px);opacity:0}}
+@keyframes aparece{from{opacity:0}}
+@media (prefers-reduced-motion:reduce){.folha,.fundo-folha{animation:none}}
+.folha header{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 10px}
+.folha h2{font-family:var(--f-display);font-size:21px;letter-spacing:.05em;margin:0}
+.fechar{width:42px;height:42px;border-radius:50%;border:0;background:var(--fundo);cursor:pointer;display:grid;place-items:center}
+.fechar svg{width:18px;height:18px}
+.folha .corpo{overflow-y:auto;padding:0 20px}
+.comanda-topo{margin:0 20px;padding:12px 14px;border-radius:14px;background:var(--fundo);border:1px dashed var(--ouro-claro);display:flex;align-items:center;gap:12px}
+.comanda-topo img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+.comanda-topo p{margin:0;font-size:13px;color:var(--suave);line-height:1.3}
+.comanda-topo strong{display:block;color:var(--tinta);font-size:14px}
+.aviso-comanda{display:flex;gap:10px;align-items:flex-start;margin:12px 0 0;padding:10px 12px;border-radius:12px;background:var(--vinho-claro);color:var(--vinho);font-size:13.5px;font-weight:600;line-height:1.35}
+.aviso-comanda svg{width:18px;height:18px;flex:none;margin-top:1px}
+.btn-mostrar{width:100%;height:54px;margin-top:12px;border:0;border-radius:16px;background:var(--tinta);color:#fff;font-weight:800;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px}
+.btn-mostrar svg{width:20px;height:20px;color:var(--ouro-vivo)}
+.btn-mostrar:focus-visible{outline:3px solid var(--ouro-vivo);outline-offset:2px}
+
+/* Tela para o atendente: letras grandes, fundo branco, nada mais */
+.atendente{position:fixed;inset:0;z-index:40;background:#fff;color:var(--tinta);display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top,0px)) 20px calc(18px + env(safe-area-inset-bottom,0px));animation:aparece .2s ease}
+.atendente .cab{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:3px double var(--ouro-claro)}
+.atendente .cab img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.atendente .cab h2{margin:0;font-family:var(--f-display);font-size:22px;letter-spacing:.04em}
+.atendente .cab p{margin:0;font-size:14px;color:var(--suave)}
+.atendente ol{list-style:none;margin:0;padding:10px 0;overflow-y:auto;flex:1}
+.atendente li{display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid var(--linha)}
+.atendente li .q{font-size:30px;font-weight:800;color:var(--vinho);min-width:52px;font-variant-numeric:tabular-nums}
+.atendente li .n{font-size:22px;font-weight:700;line-height:1.2;min-width:0}
+.atendente li .n small{display:block;font-size:14px;font-weight:600;color:var(--suave)}
+.atendente .pe{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;border-top:3px double var(--ouro-claro)}
+.atendente .pe b{font-size:28px;color:var(--vinho);font-variant-numeric:tabular-nums}
+.atendente .voltar{height:52px;padding:0 20px;border:1px solid var(--linha);border-radius:14px;background:#fff;font-weight:800;font-size:16px;cursor:pointer}
+.linha-lista{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--linha)}
+.linha-lista .mini{width:48px;height:48px;border-radius:12px;overflow:hidden;background:var(--vinho-claro);flex:none}
+.linha-lista .mini img{width:100%;height:100%;object-fit:cover}
+.linha-lista .n{flex:1;min-width:0;font-weight:700}
+.linha-lista .n small{display:block;font-weight:600;color:var(--vinho);font-variant-numeric:tabular-nums}
+.qtd-box{display:flex;align-items:center;gap:4px;background:var(--fundo);border-radius:999px;padding:3px}
+.qtd-box button{width:34px;height:34px;border-radius:50%;border:0;background:var(--cartao);cursor:pointer;font-size:18px;font-weight:800;box-shadow:0 1px 2px rgba(16,24,58,.12)}
+.qtd-box span{min-width:24px;text-align:center;font-weight:800;font-variant-numeric:tabular-nums}
+.folha footer{padding:14px 20px 18px;border-top:1px solid var(--linha)}
+.total-l{display:flex;justify-content:space-between;align-items:baseline;font-size:17px;font-weight:700}
+.total-l b{font-size:26px;color:var(--vinho);font-variant-numeric:tabular-nums}
+.dica{margin:6px 0 0;font-size:14px;color:var(--suave)}
+.limpar{margin-top:8px;border:0;background:none;color:var(--suave);text-decoration:underline;cursor:pointer;font-size:14px;padding:6px 0}
+
+/* Detalhe */
+.detalhe .foto-grande{position:relative}
+.detalhe .foto-grande img{width:100%;aspect-ratio:1/0.82;object-fit:cover;display:block;border-radius:26px 26px 0 0;background:var(--vinho-claro)}
+@media (min-width:760px){.detalhe .foto-grande img{aspect-ratio:16/11}}
+.detalhe .fechar{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.92)}
+.detalhe .corpo{padding:18px 20px 6px}
+.detalhe .cat{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro)}
+.detalhe h3{font-family:var(--f-display);font-size:24px;letter-spacing:.03em;margin:4px 0 6px;text-wrap:balance}
+.detalhe p{margin:0;color:var(--suave)}
+.detalhe .rodape-d{display:flex;align-items:center;gap:12px;padding:14px 20px 18px}
+.detalhe .preco-g{font-size:24px;font-weight:800;color:var(--vinho);font-variant-numeric:tabular-nums;margin-right:auto}
+.btn-add{height:52px;padding:0 22px;border:0;border-radius:16px;background:var(--tinta);color:#fff;font-weight:800;font-size:16px;cursor:pointer}
+.btn-add:focus-visible{outline:3px solid var(--ouro-vivo);outline-offset:2px}
+</style>
+<header class="capa">
+<div class="embrulho">
+<div class="brasao"><img alt="Brasão da Padaria Center Chic" src="/assets/menu/cfc089f1fe9eed6f40396d29.webp"/></div>
+<p class="rotulo">PADARIA · CONFEITARIA</p>
+<h1>Center Chic</h1>
+<div aria-hidden="true" class="ornamento"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"></path></svg></div>
+<p class="sub">Toque num prato para ver a foto. Use o + para anotar o que vai pedir e mostre a comanda ao atendente.</p>
+<p class="status" hidden="" id="status"><i></i><span></span></p>
+<div class="acoes">
+<a class="pilula ouro" href="#bolos-confeitados">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><path d="M4 21h16M5 21v-7h14v7M8 14V10h8v4M12 10V6"></path></svg>
+        Bolos sob encomenda
+      </a>
+<a class="pilula vidro" href="https://www.google.com.br/maps/place/Padaria+Center+Chic/@-23.576656,-46.7429124,17z" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+        Como chegar
+      </a>
+<a class="pilula vidro" href="tel:+551137313255"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>
+        Ligar
+      </a>
+</div>
+</div>
+<div class="faixa"></div>
+</header>
+<div class="barra">
+<div class="embrulho">
+<label class="busca" for="busca">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+<input autocomplete="off" enterkeyhint="search" id="busca" placeholder="Buscar pão, café, lanche…" type="search"/>
+</label>
+<nav aria-label="Categorias" class="chips" id="chips"></nav>
+</div>
+</div>
+<main class="embrulho">
+<section aria-label="Promoções do cardápio" hidden="" id="menu-promotions"></section><section aria-labelledby="t-dest" id="destaques">
+<div class="titulo-secao">
+<div aria-hidden="true" class="orn"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"></path></svg></div>
+<h2 id="t-dest">Os favoritos da casa</h2>
+</div>
+<div class="carrossel" id="carrossel"></div>
+</section>
+<div id="secoes"></div>
+<p class="vazio" hidden="" id="vazio"></p>
+<footer class="rodape">
+<div class="brasao"><img alt="" src="/assets/menu/cfc089f1fe9eed6f40396d29.webp"/></div>
+<p><strong>Padaria Center Chic</strong></p>
+<div class="info">
+<a href="https://www.google.com.br/maps/place/Padaria+Center+Chic/@-23.576656,-46.7429124,17z" rel="noopener" target="_blank"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>Endereço</b>Av. Eng. Heitor Antônio Eiras Garcia, 724<br/>Jardim Bonfiglioli · São Paulo</span></a>
+<div><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span><b>Horário</b>Todos os dias, das 6h às 22h</span></div>
+<a href="tel:+551137313255"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg><span><b>Telefone</b>(11) 3731-3255</span></a>
+</div>
+<p class="fino">Preços em reais. Imagens ilustrativas.</p>
+<p class="fino">Cardápio digital por <strong>Linka</strong></p>
+</footer>
+</main>
+<div class="barra-lista" hidden="" id="barra-lista">
+<button id="abrir-lista" type="button"><span style="display:flex;align-items:center"><span class="conta" id="conta">0</span><span class="rot">Minha comanda<small>Toque para mostrar ao atendente</small></span></span><span class="total" id="total-barra">R$ 0,00</span></button>
+</div>
+<div class="fundo-folha" hidden="" id="fundo"></div>
+<div class="aviso" hidden="" id="aviso" role="status"></div>
+<button aria-label="Voltar ao topo" class="topo-btn sozinho" hidden="" id="topo-btn" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M6 15l6-6 6 6"></path></svg></button>
+<section aria-labelledby="t-at" aria-modal="true" class="atendente" hidden="" id="atendente" role="dialog">
+<div class="cab"><img alt="" src="/assets/menu/cfc089f1fe9eed6f40396d29.webp"/><div><h2 id="t-at">Pedido</h2><p id="at-hora">Padaria Center Chic</p></div></div>
+<ol id="at-lista"></ol>
+<div class="pe"><div><span style="font-size:14px;color:var(--suave);font-weight:600">Total</span><br/><b id="at-total">R$ 0,00</b></div><button class="voltar" id="at-voltar" type="button">Voltar</button></div>
+</section>
+<section aria-labelledby="d-nome" aria-modal="true" class="folha detalhe" hidden="" id="detalhe" role="dialog">
+<div class="foto-grande"><img alt="" id="d-foto"/><button aria-label="Fechar" class="fechar" id="d-fechar" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></div>
+<div class="corpo">
+<span class="cat" id="d-cat"></span>
+<h3 id="d-nome"></h3>
+<p id="d-desc"></p>
+</div>
+<div class="rodape-d"><span class="preco-g" id="d-preco"></span><button class="btn-add" id="d-add" type="button">Anotar na comanda</button></div>
+</section>
+<section aria-labelledby="t-lista" aria-modal="true" class="folha" hidden="" id="folha" role="dialog">
+<header><h2 id="t-lista">Minha comanda</h2><button aria-label="Fechar" class="fechar" id="fechar" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.4" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></svg></button></header>
+<div class="comanda-topo"><img alt="" src="/assets/menu/cfc089f1fe9eed6f40396d29.webp"/><p><strong>Padaria Center Chic</strong>O que você anotou para pedir</p></div>
+<div class="corpo" id="corpo-lista"></div>
+<footer>
+<div class="total-l"><span>Total</span><b id="total-lista">R$ 0,00</b></div>
+<p class="aviso-comanda"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16h.01"></path></svg>A comanda fica só no seu celular. Ela não faz o pedido: mostre ao atendente ou no balcão.</p>
+<button class="btn-mostrar" id="mostrar" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><rect height="20" rx="2.5" width="12" x="6" y="2"></rect><path d="M10 18h4"></path></svg>Mostrar ao atendente</button>
+<button class="limpar" id="limpar" type="button">Apagar comanda</button>
+</footer>
+</section>
+<script>
+const MENU = /* CMS_MENU_DATA */
+/* CMS_PROMOTIONS_RUNTIME */;
+const brl = v => v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+const slug = s => norm(s).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PLUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+const ORN = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/></svg>';
+const precoTxt = it => (it.precoOriginal?'<del>'+brl(it.precoOriginal)+'</del> ':'')+brl(it.preco)+(it.kg?'<small> /kg</small>':'');
+
+const itens = new Map();
+MENU.forEach(c => { c.id = c.id || slug(c.nome); c.itens.forEach((it,i) => { it.id = it.id || c.id+'-'+i; it.cat = c.nome; itens.set(it.id,it); }); });
+
+/* ---------- Minha lista (fica só neste celular, por 12 horas) ---------- */
+let lista = {};
+try { const g = JSON.parse(localStorage.getItem('cc-lista')||'{}'); if (g && Date.now()-g.em < 12*3600e3) lista = g.itens||{}; } catch(e) {}
+const salvar = () => { try { localStorage.setItem('cc-lista', JSON.stringify({em:Date.now(), itens:lista})); } catch(e) {} };
+let tAviso;
+function avisar(html,acao){ const a=document.getElementById('aviso'); a.innerHTML=html+(acao?`<button type="button" id="aviso-acao">${acao.rotulo}</button>`:''); a.hidden=false;
+  if(acao) document.getElementById('aviso-acao').onclick=()=>{ acao.fazer(); a.hidden=true; };
+  clearTimeout(tAviso); tAviso=setTimeout(()=>a.hidden=true,2600); }
+function mudar(id,d,silencio){ const antes=lista[id]||0; lista[id]=Math.max(0,antes+d); if(!lista[id]) delete lista[id]; salvar(); atualizarLista();
+  if(d>0&&!silencio){ const it=itens.get(id); avisar(`<span>Anotado: <b>${esc(it.nome)}</b></span>`,{rotulo:'Ver comanda',fazer:abrirLista}); } }
+
+/* ---------- Render ---------- */
+const chips=document.getElementById('chips'), secoes=document.getElementById('secoes');
+const controle = id => { const q=lista[id]||0, it=itens.get(id);
+  return q ? `<span class="passo"><button type="button" data-id="${id}" data-d="-1" aria-label="Tirar um ${esc(it.nome)}">−</button><span aria-live="polite">${q}</span><button type="button" data-id="${id}" data-d="1" aria-label="Mais um ${esc(it.nome)}">+</button></span>`
+           : `<button class="mais" type="button" data-id="${id}" aria-label="Anotar ${esc(it.nome)} na comanda">${PLUS}</button>`; };
+const botaoMais = it => `<span class="ctrl" data-ctrl="${it.id}">${controle(it.id)}</span>`;
+const cartaoItem = it => `<li class="item" tabindex="0" data-ver="${it.id}">
+  <div class="foto"><img src="${it.foto}" alt="" loading="lazy" decoding="async" width="92" height="92"></div>
+  <div class="texto"><span class="nome">${esc(it.nome)}</span>${it.desc?`<p class="desc">${esc(it.desc)}</p>`:''}
+  <div class="pe"><span class="preco">${precoTxt(it)}</span>${botaoMais(it)}</div></div></li>`;
+const linhaClassica = it => `<li data-ver="${it.id}" tabindex="0"><span class="nome"><span>${esc(it.nome)}</span></span>${it.desc?`<p class="desc">${esc(it.desc)}</p>`:''}<span class="preco">${precoTxt(it)}</span>${botaoMais(it)}</li>`;
+
+function render(filtro=''){
+  const t=norm(filtro.trim()); let html='', achou=0;
+  MENU.forEach(c=>{
+    const vis=c.itens.filter(it=>!t||norm(it.nome+' '+(it.desc||'')+' '+c.nome).includes(t));
+    if(!vis.length) return; achou+=vis.length;
+    const comFoto=vis.every(it=>it.foto);
+    let corpo='';
+    if(comFoto){
+      let grupo=null, bloco='';
+      const fecha=()=>{ if(bloco) corpo+=`<ul class="itens foto">${bloco}</ul>`; bloco=''; };
+      vis.forEach(it=>{
+        if(it.grupo&&it.grupo!==grupo){ fecha(); grupo=it.grupo; corpo+=`<p class="grupo">${esc(grupo)}</p>`; }
+        bloco+=cartaoItem(it);
+      });
+      fecha();
+    }
+    else { let g=null, bloco=''; const fecha=()=>{ if(bloco) corpo+=`<ul class="lista-classica">${bloco}</ul>`; bloco=''; };
+      vis.forEach(it=>{ if(it.grupo&&it.grupo!==g){ fecha(); g=it.grupo; corpo+=`<p class="grupo">${esc(g)}</p>`; } bloco+= it.foto? '' : linhaClassica(it); });
+      fecha();
+      const fotos=vis.filter(it=>it.foto); if(fotos.length) corpo=`<ul class="itens foto">${fotos.map(cartaoItem).join('')}</ul>`+corpo; }
+    html+=`<section class="secao" id="${c.id}" aria-labelledby="t-${c.id}" style="scroll-margin-top:150px">
+      <div class="titulo-secao"><div class="orn" aria-hidden="true">${ORN}</div><h2 id="t-${c.id}">${esc(c.nome)}</h2><p class="qtd">${vis.length} ${vis.length===1?'opção':'opções'}</p></div>
+      ${c.nota&&!t?`<p class="nota">${esc(c.nota)}</p>`:''}${corpo}</section>`;
+  });
+  secoes.innerHTML=html;
+  const v=document.getElementById('vazio'); v.hidden=achou>0; v.textContent=achou?'':`Nada encontrado para “${filtro.trim()}”.`;
+  document.getElementById('destaques').hidden=!!t;
+  observar();
+}
+chips.innerHTML = MENU.map(c=>`<button class="chip" type="button" data-alvo="${c.id}"><span class="bol">${c.capa?`<img src="${c.capa}" alt="" loading="lazy">`:esc(c.nome[0])}</span>${esc(c.nome)}</button>`).join('');
+chips.addEventListener('click',e=>{ const b=e.target.closest('.chip'); if(!b) return; const s=document.getElementById(b.dataset.alvo); if(s) s.scrollIntoView({block:'start'}); });
+
+document.getElementById('carrossel').innerHTML = MENU.flatMap(c=>c.itens.filter(i=>i.destaque&&i.foto)).map(it=>`
+  <button class="destaque" type="button" data-ver="${it.id}">
+    <img src="${it.foto}" alt="" loading="lazy"><span class="preco">${brl(it.preco)}</span>
+    <span class="veu"><span class="cat">${esc(it.cat)}</span><strong>${esc(it.nome)}</strong></span>
+  </button>`).join('');
+
+document.addEventListener('click',e=>{
+  const m=e.target.closest('.mais'); if(m){ e.stopPropagation(); return mudar(m.dataset.id,1); }
+  const p=e.target.closest('.passo [data-d]'); if(p){ e.stopPropagation(); return mudar(p.dataset.id,+p.dataset.d,true); }
+  if(e.target.closest('.ctrl')) return;
+  const v=e.target.closest('[data-ver]'); if(v && !e.target.closest('.folha')) ver(v.dataset.ver);
+});
+document.addEventListener('keydown',e=>{ if((e.key==='Enter'||e.key===' ')&&e.target.matches('li[data-ver]')){ e.preventDefault(); ver(e.target.dataset.ver); } });
+
+let tBusca; document.getElementById('busca').addEventListener('input',e=>{ clearTimeout(tBusca); tBusca=setTimeout(()=>render(e.target.value),120); });
+
+let obs;
+function observar(){ obs&&obs.disconnect();
+  obs=new IntersectionObserver(ents=>{ const v=ents.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0]; if(!v) return;
+    chips.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-current',c.dataset.alvo===v.target.id));
+    const a=chips.querySelector('[aria-current="true"]'); if(a) chips.scrollTo({left:Math.max(0,a.offsetLeft-(chips.clientWidth-a.offsetWidth)/2),behavior:'smooth'});
+  },{rootMargin:'-150px 0px -60% 0px'});
+  document.querySelectorAll('.secao').forEach(s=>obs.observe(s)); }
+
+/* ---------- Folhas ---------- */
+const fundo=document.getElementById('fundo'), folha=document.getElementById('folha'), detalhe=document.getElementById('detalhe');
+let emDetalhe=null;
+function mostrarFundo(){ fundo.hidden=folha.hidden&&detalhe.hidden; document.body.style.overflow=fundo.hidden?'':'hidden'; }
+function ver(id){ const it=itens.get(id); if(!it) return; emDetalhe=id;
+  const f=document.getElementById('d-foto'); f.parentElement.hidden=!it.foto; if(it.foto){ f.src=it.foto; f.alt=it.nome; }
+  document.getElementById('d-cat').textContent=it.cat;
+  document.getElementById('d-nome').textContent=it.nome;
+  document.getElementById('d-desc').textContent=it.desc||'';
+  document.getElementById('d-preco').innerHTML=precoTxt(it);
+  document.getElementById('d-add').textContent = lista[id] ? `Anotar mais um (${lista[id]} na comanda)` : 'Anotar na comanda';
+  detalhe.hidden=false; mostrarFundo(); document.getElementById('d-add').focus(); }
+function fecharDetalhe(){ detalhe.hidden=true; mostrarFundo(); }
+function abrirLista(){ folha.hidden=false; mostrarFundo(); document.getElementById('fechar').focus(); }
+function fecharLista(){ folha.hidden=true; mostrarFundo(); }
+document.getElementById('d-fechar').onclick=fecharDetalhe;
+document.getElementById('d-add').onclick=()=>{ mudar(emDetalhe,1); fecharDetalhe(); };
+document.getElementById('abrir-lista').onclick=abrirLista;
+document.getElementById('fechar').onclick=fecharLista;
+fundo.onclick=()=>{ fecharDetalhe(); fecharLista(); };
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ if(!atendente.hidden){ atendente.hidden=true; return; } fecharDetalhe(); fecharLista(); } });
+document.getElementById('limpar').onclick=()=>{ const copia={...lista}; lista={}; salvar(); atualizarLista(); fecharLista(); avisar('<span>Comanda apagada</span>',{rotulo:'Desfazer',fazer:()=>{ lista=copia; salvar(); atualizarLista(); }}); };
+/* Tela para o atendente */
+const atendente=document.getElementById('atendente');
+document.getElementById('mostrar').onclick=()=>{
+  const ids=Object.keys(lista).filter(id=>itens.has(id));
+  document.getElementById('at-lista').innerHTML=ids.map(id=>{ const it=itens.get(id); return `<li><span class="q">${lista[id]}×</span><span class="n">${esc(it.nome)}<small>${esc(it.cat)}</small></span></li>`; }).join('');
+  document.getElementById('at-total').textContent=document.getElementById('total-lista').textContent;
+  document.getElementById('at-hora').textContent='Padaria Center Chic · '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+  atendente.hidden=false; document.getElementById('at-voltar').focus();
+  try{ navigator.wakeLock && navigator.wakeLock.request('screen').catch(()=>{}); }catch(e){}
+};
+document.getElementById('at-voltar').onclick=()=>{ atendente.hidden=true; };
+/* Voltar ao topo */
+const topoBtn=document.getElementById('topo-btn');
+addEventListener('scroll',()=>{ topoBtn.hidden=scrollY<900; },{passive:true});
+topoBtn.onclick=()=>scrollTo({top:0});
+document.getElementById('corpo-lista').addEventListener('click',e=>{ const b=e.target.closest('[data-d]'); if(b){ e.stopPropagation(); mudar(b.dataset.id,+b.dataset.d); } });
+
+function atualizarLista(){
+  const ids=Object.keys(lista).filter(id=>itens.has(id));
+  const qtd=ids.reduce((s,id)=>s+lista[id],0), total=ids.reduce((s,id)=>s+lista[id]*itens.get(id).preco,0);
+  document.getElementById('barra-lista').hidden=qtd===0;
+  document.getElementById('conta').textContent=qtd;
+  document.getElementById('total-barra').textContent=brl(total);
+  document.getElementById('total-lista').textContent=brl(total);
+  document.getElementById('corpo-lista').innerHTML = ids.length ? ids.map(id=>{ const it=itens.get(id); return `
+    <div class="linha-lista"><div class="mini">${it.foto?`<img src="${it.foto}" alt="">`:''}</div>
+    <div class="n">${esc(it.nome)}<small>${brl(it.preco*lista[id])}</small></div>
+    <div class="qtd-box"><button type="button" data-id="${id}" data-d="-1" aria-label="Diminuir">−</button><span>${lista[id]}</span><button type="button" data-id="${id}" data-d="1" aria-label="Aumentar">+</button></div></div>`; }).join('')
+    : '<p class="vazio">Sua comanda está vazia.</p>';
+  document.querySelectorAll('[data-ctrl]').forEach(s=>{ const html=controle(s.dataset.ctrl); if(s.innerHTML!==html) s.innerHTML=html; });
+  topoBtn.classList.toggle('sozinho',qtd===0);
+  if(qtd===0&&!folha.hidden) fecharLista();
+}
+render(); atualizarLista();
+
+(function(){var el=document.getElementById('status');if(!el)return;
+function h(){var s=new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo',hour:'numeric',minute:'numeric',hour12:false}).split(':');var m=(+s[0]%24)*60+(+s[1]);return m;}
+function pinta(){var m=h(),aberto=m>=360&&m<1320;el.hidden=false;el.classList.toggle('fechado',!aberto);el.querySelector('span').textContent=aberto?'Aberto agora · até 22h':'Fechado · abre às 6h';}
+try{pinta();setInterval(pinta,60000);}catch(e){}})();
+</script>
+</body></html>

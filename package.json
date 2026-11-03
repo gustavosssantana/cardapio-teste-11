@@ -1,0 +1,12 @@
+{
+  "name": "cardapio-center-chic",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node cms/build.cjs",
+    "test": "node --test cms/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

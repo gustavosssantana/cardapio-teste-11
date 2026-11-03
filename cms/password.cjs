@@ -1,0 +1,5 @@
+const crypto=require('node:crypto');
+if(!process.stdin.isTTY){console.error('Execute este comando em um terminal interativo.');process.exit(1);}
+process.stdout.write('Crie uma senha com pelo menos 16 caracteres (a digitação fica oculta): ');
+let password='';process.stdin.setRawMode(true);process.stdin.resume();process.stdin.setEncoding('utf8');
+process.stdin.on('data',chunk=>{for(const char of chunk){if(char==='\u0003'){process.stdout.write('\nCancelado.\n');process.exit(1);}if(char==='\r'||char==='\n'){process.stdin.setRawMode(false);if(password.length<16){console.error('\nUse pelo menos 16 caracteres.');process.exit(1);}const salt=crypto.randomBytes(16).toString('hex');crypto.scrypt(password,salt,64,(error,key)=>{password='';if(error)throw error;console.log('\nCMS_PASSWORD_HASH=scrypt$'+salt+'$'+key.toString('hex'));console.log('CMS_SESSION_SECRET='+crypto.randomBytes(48).toString('base64url'));console.log('Copie os valores somente para as variáveis de ambiente da Vercel. Não publique no GitHub.');process.exit(0);});return;}if(char==='\u007f'||char==='\b')password=password.slice(0,-1);else if(char.charCodeAt(0)>=32&&password.length<256)password+=char;}});
