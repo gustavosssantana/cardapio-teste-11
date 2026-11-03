@@ -1,22 +1,26 @@
-# Cardápio digital Center Chic
+# Card�pio digital Center Chic
 
-Projeto de https://cardapio.vercel.app/ — preserva os 193 produtos, 17 categorias, fotos e a comanda local do cardápio original.
+Projeto de https://cardapio.vercel.app/ � preserva os 193 produtos, 17 categorias, fotos e a comanda local do card�pio original.
 
-## Administração
+## Administra��o
 
-Abra `/admin/`. O usuário é `admin`; a senha é entregue ao responsável e não fica no repositório.
+Abra `/admin/`. O usu�rio � `admin`; a senha � entregue ao respons�vel e n�o fica no reposit�rio.
 
-O painel permite editar produtos, preços, descrições, fotos, categorias, ordem, disponibilidade e destaques. Promoções podem ser ligadas a um produto: durante o período definido, o valor promocional é aplicado também à comanda. Sem produto vinculado, a promoção é um aviso geral.
+O painel permite editar produtos, pre�os, descri��es, fotos, categorias, ordem, disponibilidade e destaques. Promo��es podem ser ligadas a um produto: durante o per�odo definido, o valor promocional � aplicado tamb�m � comanda. Sem produto vinculado, a promo��o � um aviso geral.
 
-Salve um rascunho para continuar depois ou clique em Publicar alterações e confirme. Aguarde a mensagem de publicação concluída. O histórico permite recuperar versões anteriores do cardápio. As imagens são otimizadas no envio; JPG, PNG e WebP são aceitos.
+Salve um rascunho para continuar depois ou clique em Publicar altera��es e confirme. Aguarde a mensagem de publica��o conclu�da. O hist�rico permite recuperar vers�es anteriores do card�pio. As imagens s�o otimizadas no envio; JPG, PNG e WebP s�o aceitos.
 
-## Publicação
+## Publica��o
 
-`npm run build` prepara `public/`. A Vercel usa essa pasta e a função `/api/cms`.
-O conteúdo fica em `content/cms.json`. O rascunho fica em `cms/draft.json` e nunca é publicado como arquivo público. As 194 imagens originais foram extraídas do HTML sem alteração dos bytes e são carregadas sob demanda.
+`npm run build` prepara `public/`. A Vercel usa essa pasta e a fun��o `/api/cms`.
+O conte�do fica em `content/cms.json`. O rascunho fica em `cms/draft.json` e nunca � publicado como arquivo p�blico. As 194 imagens originais foram extra�das do HTML sem altera��o dos bytes e s�o carregadas sob demanda.
 
-Os segredos `CMS_GITHUB_TOKEN`, `CMS_PASSWORD_HASH` e `CMS_SESSION_SECRET` ficam somente nas variáveis sensíveis de produção da Vercel. A chave do GitHub tem acesso somente a este repositório, Contents read/write e Metadata read. Sua validade termina em 01/02/2027; renove antes dessa data para continuar salvando edições.
+Os segredos `CMS_GITHUB_TOKEN`, `CMS_PASSWORD_HASH` e `CMS_SESSION_SECRET` ficam somente nas vari�veis sens�veis de produ��o da Vercel. A chave do GitHub tem acesso somente a este reposit�rio, Contents read/write e Metadata read. Sua validade termina em 01/02/2027; renove antes dessa data para continuar salvando edi��es.
 
-`npm test` verifica preservação de preços, fotos e identificadores da comanda, limita as alterações ao cardápio e confere as promoções e a confirmação de publicação. O código usa scrypt, cookies HttpOnly/Secure/SameSite Strict, checagem de origem e CSRF, validação de arquivos e conflito de versões. O limite de tentativas de login é por instância; para limite global use o Firewall da Vercel conforme o plano.
+`npm test` verifica preserva��o de pre�os, fotos e identificadores da comanda, limita as altera��es ao card�pio e confere as promo��es e a confirma��o de publica��o. O c�digo usa scrypt, cookies HttpOnly/Secure/SameSite Strict, checagem de origem e CSRF, valida��o de arquivos e conflito de vers�es. O limite de tentativas de login � por inst�ncia; para limite global use o Firewall da Vercel conforme o plano.
 
-A administração é somente deste cardápio digital. Os sites institucionais da Center Chic e da Tomaniks não fazem parte deste painel.
+A administra��o � somente deste card�pio digital. Os sites institucionais da Center Chic e da Tomaniks n�o fazem parte deste painel.
+
+## Revis�o de seguran�a
+
+Consulte [SECURITY.md](SECURITY.md) para testes, controles, limites e refer�ncias brasileiras. A pr�via simplificada foi removida; use o rascunho e publique ap�s conferir os campos. Fonte e �cones do painel s�o locais.

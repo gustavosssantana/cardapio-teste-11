@@ -372,7 +372,7 @@ const controle = id => { const q=lista[id]||0, it=itens.get(id);
            : `<button class="mais" type="button" data-id="${id}" aria-label="Anotar ${esc(it.nome)} na comanda">${PLUS}</button>`; };
 const botaoMais = it => `<span class="ctrl" data-ctrl="${it.id}">${controle(it.id)}</span>`;
 const cartaoItem = it => `<li class="item" tabindex="0" data-ver="${it.id}">
-  <div class="foto"><img src="${it.foto}" alt="" loading="lazy" decoding="async" width="92" height="92"></div>
+  <div class="foto"><img src="${esc(it.foto)}" alt="" loading="lazy" decoding="async" width="92" height="92"></div>
   <div class="texto"><span class="nome">${esc(it.nome)}</span>${it.desc?`<p class="desc">${esc(it.desc)}</p>`:''}
   <div class="pe"><span class="preco">${precoTxt(it)}</span>${botaoMais(it)}</div></div></li>`;
 const linhaClassica = it => `<li data-ver="${it.id}" tabindex="0"><span class="nome"><span>${esc(it.nome)}</span></span>${it.desc?`<p class="desc">${esc(it.desc)}</p>`:''}<span class="preco">${precoTxt(it)}</span>${botaoMais(it)}</li>`;
@@ -406,12 +406,12 @@ function render(filtro=''){
   document.getElementById('destaques').hidden=!!t;
   observar();
 }
-chips.innerHTML = MENU.map(c=>`<button class="chip" type="button" data-alvo="${c.id}"><span class="bol">${c.capa?`<img src="${c.capa}" alt="" loading="lazy">`:esc(c.nome[0])}</span>${esc(c.nome)}</button>`).join('');
+chips.innerHTML = MENU.map(c=>`<button class="chip" type="button" data-alvo="${c.id}"><span class="bol">${c.capa?`<img src="${esc(c.capa)}" alt="" loading="lazy">`:esc(c.nome[0])}</span>${esc(c.nome)}</button>`).join('');
 chips.addEventListener('click',e=>{ const b=e.target.closest('.chip'); if(!b) return; const s=document.getElementById(b.dataset.alvo); if(s) s.scrollIntoView({block:'start'}); });
 
 document.getElementById('carrossel').innerHTML = MENU.flatMap(c=>c.itens.filter(i=>i.destaque&&i.foto)).map(it=>`
   <button class="destaque" type="button" data-ver="${it.id}">
-    <img src="${it.foto}" alt="" loading="lazy"><span class="preco">${brl(it.preco)}</span>
+    <img src="${esc(it.foto)}" alt="" loading="lazy"><span class="preco">${brl(it.preco)}</span>
     <span class="veu"><span class="cat">${esc(it.cat)}</span><strong>${esc(it.nome)}</strong></span>
   </button>`).join('');
 
@@ -480,7 +480,7 @@ function atualizarLista(){
   document.getElementById('total-barra').textContent=brl(total);
   document.getElementById('total-lista').textContent=brl(total);
   document.getElementById('corpo-lista').innerHTML = ids.length ? ids.map(id=>{ const it=itens.get(id); return `
-    <div class="linha-lista"><div class="mini">${it.foto?`<img src="${it.foto}" alt="">`:''}</div>
+    <div class="linha-lista"><div class="mini">${it.foto?`<img src="${esc(it.foto)}" alt="">`:''}</div>
     <div class="n">${esc(it.nome)}<small>${brl(it.preco*lista[id])}</small></div>
     <div class="qtd-box"><button type="button" data-id="${id}" data-d="-1" aria-label="Diminuir">−</button><span>${lista[id]}</span><button type="button" data-id="${id}" data-d="1" aria-label="Aumentar">+</button></div></div>`; }).join('')
     : '<p class="vazio">Sua comanda está vazia.</p>';
