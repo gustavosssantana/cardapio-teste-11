@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "1a367eaf-d1ef-4504-8576-93f1d0308234",
+  "revision": "37061f4b-87c7-4af5-adc7-123649fd0db4",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -167,7 +167,7 @@
       "id": "lanches-especiais-0",
       "name": "Center Chic 1",
       "price": 34.9,
-      "description": "Pão à escolha, Filé de Frango, Queijo Fresco, Presunto, ovo, Maionese, Alface e Tomate",
+      "description": "Pão à escolha, Filé de Frango, Queijo Fresco, Presunto, ovo, Maionese, Alface e Tomate.",
       "image": "/assets/menu/f594759fd80c2e9dd8ab4aa7.webp",
       "priceUnit": "",
       "group": "",
@@ -205,7 +205,7 @@
     {
       "id": "cafeteria-0",
       "name": "Cafézinho",
-      "price": 5.0,
+      "price": 5,
       "description": "",
       "image": "/assets/menu/0e57a291250150a010e50a73.webp",
       "priceUnit": "",
@@ -218,7 +218,7 @@
     {
       "id": "cafeteria-1",
       "name": "Café para Viagem",
-      "price": 6.0,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/40cbe88084f1282368fe067f.webp",
       "priceUnit": "",
@@ -231,7 +231,7 @@
     {
       "id": "cafeteria-2",
       "name": "Média",
-      "price": 6.0,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/ec4dc31c635f1044002e7f7c.webp",
       "priceUnit": "",
@@ -270,7 +270,7 @@
     {
       "id": "cafeteria-5",
       "name": "Capuccino Grande",
-      "price": 9.0,
+      "price": 9,
       "description": "",
       "image": "/assets/menu/f65fd08a38bc2230e5453c96.webp",
       "priceUnit": "",
@@ -296,7 +296,7 @@
     {
       "id": "cafeteria-7",
       "name": "Copo de Leite",
-      "price": 6.0,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/f25e62f324a7c562ab72de06.webp",
       "priceUnit": "",
@@ -309,7 +309,7 @@
     {
       "id": "cafeteria-8",
       "name": "Chocolate Quente Pequeno",
-      "price": 6.0,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/87db6407523a5a01570dfed4.webp",
       "priceUnit": "",
@@ -322,7 +322,7 @@
     {
       "id": "cafeteria-9",
       "name": "Chocolate Quente Grande",
-      "price": 9.0,
+      "price": 9,
       "description": "",
       "image": "/assets/menu/d9b5487c333f2a6ceaae785d.webp",
       "priceUnit": "",
@@ -335,7 +335,7 @@
     {
       "id": "cafeteria-10",
       "name": "Chocolate Batido",
-      "price": 10.0,
+      "price": 10,
       "description": "",
       "image": "/assets/menu/554b38cfeca7e1776c1a21f8.webp",
       "priceUnit": "",
@@ -361,7 +361,7 @@
     {
       "id": "cafeteria-12",
       "name": "Chá Diversos Sabores",
-      "price": 5.0,
+      "price": 5,
       "description": "",
       "image": "/assets/menu/2178a57e79c67fbc20ce3713.webp",
       "priceUnit": "",
@@ -374,7 +374,7 @@
     {
       "id": "cafeteria-13",
       "name": "Salada de frutas (300 ml)",
-      "price": 15.0,
+      "price": 15,
       "description": "",
       "image": "/assets/menu/097ba32516740a4d69ee7c9c.webp",
       "priceUnit": "",
@@ -387,7 +387,7 @@
     {
       "id": "matinais-0",
       "name": "Pão na Chapa",
-      "price": 6.0,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/5df235c4253881117debc0b9.webp",
       "priceUnit": "",
@@ -400,7 +400,7 @@
     {
       "id": "matinais-1",
       "name": "Pão com manteiga",
-      "price": 6.0,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/a56ed12ba7149d30705c96cc.webp",
       "priceUnit": "",
@@ -413,7 +413,7 @@
     {
       "id": "matinais-2",
       "name": "Pão com Requeijão",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/08aa03a7061638db1d05a919.webp",
       "priceUnit": "",
@@ -426,7 +426,7 @@
     {
       "id": "matinais-3",
       "name": "Pão Integral com Manteiga",
-      "price": 7.0,
+      "price": 7,
       "description": "",
       "image": "/assets/menu/c225d187340c5e9851377ca0.webp",
       "priceUnit": "",
@@ -439,7 +439,7 @@
     {
       "id": "matinais-4",
       "name": "Pão Integral com Requeijão",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/3f36a9d14c10d8a96979aefb.webp",
       "priceUnit": "",
@@ -465,7 +465,7 @@
     {
       "id": "matinais-6",
       "name": "Bisnaga com Requeijão",
-      "price": 9.0,
+      "price": 9,
       "description": "",
       "image": "/assets/menu/ffe9cd76fb3d2d3df0638041.webp",
       "priceUnit": "",
@@ -478,7 +478,7 @@
     {
       "id": "matinais-7",
       "name": "Fatia Pão de Forma com Manteiga",
-      "price": 4.0,
+      "price": 4,
       "description": "",
       "image": "/assets/menu/e06571bca6e4f825e08e52c4.webp",
       "priceUnit": "",
@@ -491,7 +491,7 @@
     {
       "id": "matinais-8",
       "name": "Fatia Pão de Forma com Requeijão",
-      "price": 5.0,
+      "price": 5,
       "description": "",
       "image": "/assets/menu/28b989392478fe9cc5f95d76.webp",
       "priceUnit": "",
@@ -517,7 +517,7 @@
     {
       "id": "salgados-0",
       "name": "Salgados variados",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/c7cf50b351d1336aa6b5afc9.webp",
       "priceUnit": "",
@@ -530,7 +530,7 @@
     {
       "id": "salgados-1",
       "name": "Esfiha Fechada",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/234b59e8801ccb67b6e62725.webp",
       "priceUnit": "",
@@ -543,7 +543,7 @@
     {
       "id": "salgados-2",
       "name": "Empadas",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/096ce74e16eebd2dbce2bae6.webp",
       "priceUnit": "",
@@ -569,7 +569,7 @@
     {
       "id": "salgados-4",
       "name": "Fogazza",
-      "price": 10.0,
+      "price": 10,
       "description": "",
       "image": "/assets/menu/a8f454ccaf64d5caaf69158b.webp",
       "priceUnit": "",
@@ -582,7 +582,7 @@
     {
       "id": "salgados-5",
       "name": "Pão de Queijo Grande",
-      "price": 7.0,
+      "price": 7,
       "description": "",
       "image": "/assets/menu/0de5cd54aa9840b856f7ecfe.webp",
       "priceUnit": "",
@@ -608,7 +608,7 @@
     {
       "id": "salgados-7",
       "name": "Pizza Pedaço",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/b4173c4ddbd387e81a949ea8.webp",
       "priceUnit": "",
@@ -621,7 +621,7 @@
     {
       "id": "salgados-8",
       "name": "Torta de Frango (Fatia)",
-      "price": 10.0,
+      "price": 10,
       "description": "",
       "image": "/assets/menu/2bbeb04990e2eb3636e8c28a.webp",
       "priceUnit": "",
@@ -634,7 +634,7 @@
     {
       "id": "salgados-9",
       "name": "Kibe",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/7dfbe870bd5958055982fdf0.webp",
       "priceUnit": "",
@@ -647,7 +647,7 @@
     {
       "id": "salgados-10",
       "name": "Enroladinho",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/5685383d6f5aff8e2ef8d946.webp",
       "priceUnit": "",
@@ -660,7 +660,7 @@
     {
       "id": "croissant-0",
       "name": "Peito de Peru com Queijo Branco",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/7b6a0e510162390e8ce36300.webp",
       "priceUnit": "",
@@ -673,7 +673,7 @@
     {
       "id": "croissant-1",
       "name": "Presunto e Queijo",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/1c312b5e259bd3b7abb6dc00.webp",
       "priceUnit": "",
@@ -686,7 +686,7 @@
     {
       "id": "croissant-2",
       "name": "Queijo Branco",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/b42862a216019ae19b9a5d4b.webp",
       "priceUnit": "",
@@ -699,7 +699,7 @@
     {
       "id": "croissant-3",
       "name": "Queijo Prato",
-      "price": 8.0,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/1d92746263ba084c292a7d93.webp",
       "priceUnit": "",
@@ -725,7 +725,7 @@
     {
       "id": "lanches-tradicionais-0",
       "name": "Americano",
-      "price": 18.0,
+      "price": 18,
       "description": "Pão Francês, Presunto, Queijo, Ovo, Maionese, Alface, Tomate",
       "image": "/assets/menu/57fa6b9616a649d28edaf301.webp",
       "priceUnit": "",
@@ -738,7 +738,7 @@
     {
       "id": "lanches-tradicionais-1",
       "name": "Bauru",
-      "price": 14.0,
+      "price": 14,
       "description": "Pão Francês, Presunto, Queijo, Tomate",
       "image": "/assets/menu/bbf8150d9913e12977ee7be0.webp",
       "priceUnit": "",
@@ -751,7 +751,7 @@
     {
       "id": "lanches-tradicionais-2",
       "name": "Churrasco",
-      "price": 18.0,
+      "price": 18,
       "description": "Pão Francês e Contrafilé",
       "image": "/assets/menu/02f7eaefd9b13ca297bf485d.webp",
       "priceUnit": "",
@@ -764,7 +764,7 @@
     {
       "id": "lanches-tradicionais-3",
       "name": "Churrasco com Queijo",
-      "price": 22.0,
+      "price": 22,
       "description": "Pão Francês, Contrafilé e Queijo",
       "image": "/assets/menu/543f4e494b521213c9a78ead.webp",
       "priceUnit": "",
@@ -777,7 +777,7 @@
     {
       "id": "lanches-tradicionais-4",
       "name": "Churrasco com Queijo e Vinagrete",
-      "price": 23.0,
+      "price": 23,
       "description": "Pão Francês, Contrafilé, Queijo e Vinagrete",
       "image": "/assets/menu/f3f0b8d7382db685950f50b9.webp",
       "priceUnit": "",
@@ -790,7 +790,7 @@
     {
       "id": "lanches-tradicionais-5",
       "name": "Calabresa com Queijo",
-      "price": 17.0,
+      "price": 17,
       "description": "Pão Francês, Linguiça Calabresa e Queijo",
       "image": "/assets/menu/7dbd29cec560540f5649556b.webp",
       "priceUnit": "",
@@ -816,7 +816,7 @@
     {
       "id": "lanches-tradicionais-7",
       "name": "Filé de Frango com Queijo",
-      "price": 18.0,
+      "price": 18,
       "description": "Pão Francês, Filé de Frango e Queijo",
       "image": "/assets/menu/23953a5119fe9d2ec5c1f94b.webp",
       "priceUnit": "",
@@ -829,7 +829,7 @@
     {
       "id": "lanches-tradicionais-8",
       "name": "Misto Quente/Frio",
-      "price": 13.0,
+      "price": 13,
       "description": "Pão Francês, Presunto e Queijo",
       "image": "/assets/menu/51051246a9fdf9a5bb36eb54.webp",
       "priceUnit": "",
@@ -842,7 +842,7 @@
     {
       "id": "lanches-tradicionais-9",
       "name": "Misto Quente/Frio Queijo Branco",
-      "price": 14.0,
+      "price": 14,
       "description": "Pão Francês, Presunto e Queijo Branco",
       "image": "/assets/menu/b42264c20598ef6c9600ea71.webp",
       "priceUnit": "",
@@ -855,7 +855,7 @@
     {
       "id": "lanches-tradicionais-10",
       "name": "Misto Quente no Pão de Forma",
-      "price": 12.0,
+      "price": 12,
       "description": "Pão de Forma, Presunto e Queijo",
       "image": "/assets/menu/53737dae23489fa50d34728c.webp",
       "priceUnit": "",
@@ -868,7 +868,7 @@
     {
       "id": "lanches-tradicionais-11",
       "name": "Misto Quente Pão Integral",
-      "price": 13.0,
+      "price": 13,
       "description": "Pão Integral, Presunto e Queijo",
       "image": "/assets/menu/6f02103b1f14fa5bac8ad803.webp",
       "priceUnit": "",
@@ -881,7 +881,7 @@
     {
       "id": "lanches-tradicionais-12",
       "name": "Mortadela Ceratti",
-      "price": 16.0,
+      "price": 16,
       "description": "Pão Francês e Mortadela Ceratti",
       "image": "/assets/menu/dc49cef95e416f3937db980f.webp",
       "priceUnit": "",
@@ -894,7 +894,7 @@
     {
       "id": "lanches-tradicionais-13",
       "name": "Mortadela Marba",
-      "price": 14.0,
+      "price": 14,
       "description": "Pão Francês e Mortadela Marba",
       "image": "/assets/menu/79f78a6b7b4b3b3fb96a66ec.webp",
       "priceUnit": "",
@@ -907,7 +907,7 @@
     {
       "id": "lanches-tradicionais-14",
       "name": "Mortadela Ceratti com Queijo",
-      "price": 18.0,
+      "price": 18,
       "description": "Pão Francês, Mortadela Ceratti e Queijo",
       "image": "/assets/menu/411d95b0339738742c6d7eb5.webp",
       "priceUnit": "",
@@ -920,7 +920,7 @@
     {
       "id": "lanches-tradicionais-15",
       "name": "Mortadela Marba com Queijo",
-      "price": 16.0,
+      "price": 16,
       "description": "Pão Francês, Mortadela Marba e Queijo",
       "image": "/assets/menu/52b04ab058f8035e26bba121.webp",
       "priceUnit": "",
@@ -933,7 +933,7 @@
     {
       "id": "lanches-tradicionais-16",
       "name": "Peito de Peru",
-      "price": 17.0,
+      "price": 17,
       "description": "Pão Francês, Peito de Peru",
       "image": "/assets/menu/9526e642686183d77fec063c.webp",
       "priceUnit": "",
@@ -946,7 +946,7 @@
     {
       "id": "lanches-tradicionais-17",
       "name": "Peito de Peru com Queijo Branco",
-      "price": 19.0,
+      "price": 19,
       "description": "Pão Francês, Peito de Peru e Queijo Branco",
       "image": "/assets/menu/f3936f54623a90ec723c05a4.webp",
       "priceUnit": "",
@@ -959,7 +959,7 @@
     {
       "id": "lanches-tradicionais-18",
       "name": "Peito de Peru com Queijo Prato",
-      "price": 19.0,
+      "price": 19,
       "description": "Pão Francês, Peito de Peru e Queijo Prato",
       "image": "/assets/menu/2a5e4fa80a70b7a9fe274fb6.webp",
       "priceUnit": "",
@@ -972,7 +972,7 @@
     {
       "id": "lanches-tradicionais-19",
       "name": "Presunto",
-      "price": 12.0,
+      "price": 12,
       "description": "Pão Francês e Presunto sem capa de gordura",
       "image": "/assets/menu/7da9cef051e677f06c3e2e4e.webp",
       "priceUnit": "",
@@ -985,7 +985,7 @@
     {
       "id": "lanches-tradicionais-20",
       "name": "Provolone",
-      "price": 18.0,
+      "price": 18,
       "description": "Pão Francês e Queijo Provolone",
       "image": "/assets/menu/827864fa1c3fba6575247012.webp",
       "priceUnit": "",
@@ -998,7 +998,7 @@
     {
       "id": "lanches-tradicionais-21",
       "name": "Pão com Ovo",
-      "price": 9.0,
+      "price": 9,
       "description": "Pão Francês e Ovo na chapa",
       "image": "/assets/menu/44f2d673d0b548a6cf9f7f7b.webp",
       "priceUnit": "",
@@ -1024,7 +1024,7 @@
     {
       "id": "lanches-tradicionais-23",
       "name": "Queijo Branco",
-      "price": 15.0,
+      "price": 15,
       "description": "Pão Francês e Queijo Fresco Branco, Tomate e Orégano",
       "image": "/assets/menu/1575d920f4abf356d03ac3d1.webp",
       "priceUnit": "",
@@ -1037,7 +1037,7 @@
     {
       "id": "lanches-tradicionais-24",
       "name": "Queijo Branco e Pão de Forma",
-      "price": 16.0,
+      "price": 16,
       "description": "Pão de forma e Queijo Fresco Branco, Tomate e Orégano",
       "image": "/assets/menu/f0264e111f5765e0936a0021.webp",
       "priceUnit": "",
@@ -1050,7 +1050,7 @@
     {
       "id": "lanches-tradicionais-25",
       "name": "Queijo Prato",
-      "price": 15.0,
+      "price": 15,
       "description": "Pão Francês e Queijo Prato",
       "image": "/assets/menu/f54fb9e7fe3d389024e0a913.webp",
       "priceUnit": "",
@@ -1063,7 +1063,7 @@
     {
       "id": "lanches-tradicionais-26",
       "name": "Salame",
-      "price": 22.0,
+      "price": 22,
       "description": "Pão Francês e Salame Italiano",
       "image": "/assets/menu/b17787283b87cf33fc1e9087.webp",
       "priceUnit": "",
@@ -1076,7 +1076,7 @@
     {
       "id": "lanches-tradicionais-27",
       "name": "Salame com Queijo",
-      "price": 25.0,
+      "price": 25,
       "description": "Pão Francês, Queijo e Salame Italiano",
       "image": "/assets/menu/7c8a10637d1a1636e8baf6ea.webp",
       "priceUnit": "",
@@ -1089,7 +1089,7 @@
     {
       "id": "lanches-tradicionais-28",
       "name": "Bauru na baguete de parmesão",
-      "price": 22.0,
+      "price": 22,
       "description": "",
       "image": "/assets/menu/3a35cb74a4fba1a49d968d91.webp",
       "priceUnit": "",
@@ -1102,7 +1102,7 @@
     {
       "id": "burgers-0",
       "name": "Hambúrguer",
-      "price": 12.0,
+      "price": 12,
       "description": "Pão, Hambúrguer",
       "image": "/assets/menu/51b7eafd58ebefe35801af6f.webp",
       "priceUnit": "",
@@ -1115,7 +1115,7 @@
     {
       "id": "burgers-1",
       "name": "X-Bacon",
-      "price": 18.0,
+      "price": 18,
       "description": "Pão, Hambúrguer, Maionese, Fatias de Bacon e Queijo",
       "image": "/assets/menu/66dec90891f4f6a6c24390e9.webp",
       "priceUnit": "",
@@ -1128,7 +1128,7 @@
     {
       "id": "burgers-2",
       "name": "X-bacon salada",
-      "price": 20.0,
+      "price": 20,
       "description": "Pão, Hambúrguer, Maionese, Fatias de Bacon, Queijo, Alface e Tomate",
       "image": "/assets/menu/dd4d6c5d0653ce1e0438c994.webp",
       "priceUnit": "",
@@ -1141,7 +1141,7 @@
     {
       "id": "burgers-3",
       "name": "X-burguer",
-      "price": 15.0,
+      "price": 15,
       "description": "Pão, Hambúrguer, Maionese e Queijo",
       "image": "/assets/menu/6ff146b827e2a8198489fbf5.webp",
       "priceUnit": "",
@@ -1154,7 +1154,7 @@
     {
       "id": "burgers-4",
       "name": "X-egg",
-      "price": 19.0,
+      "price": 19,
       "description": "Pão, Hambúrguer, Maionese, Ovo e Queijo",
       "image": "/assets/menu/42b91267111c0c393c1d1175.webp",
       "priceUnit": "",
@@ -1167,7 +1167,7 @@
     {
       "id": "burgers-5",
       "name": "X-egg",
-      "price": 21.0,
+      "price": 21,
       "description": "Pão, Hambúrguer, Maionese, Alface, tomate Ovo e Queijo",
       "image": "/assets/menu/6d1639df6b77cb3a032d798f.webp",
       "priceUnit": "",
@@ -1180,7 +1180,7 @@
     {
       "id": "burgers-6",
       "name": "X-salada",
-      "price": 16.0,
+      "price": 16,
       "description": "Pão, Hambúrguer, Maionese, Alface, Tomate e Queijo",
       "image": "/assets/menu/789b489b114042ff6286c58f.webp",
       "priceUnit": "",
@@ -1193,7 +1193,7 @@
     {
       "id": "burgers-7",
       "name": "X-tudo",
-      "price": 29.0,
+      "price": 29,
       "description": "Pão, Hambúrguer, Maionese, Bacon, Ovo, Presunto, Salame, Alface, Tomate e Queijo",
       "image": "/assets/menu/8b7a570da586f1810c5b540a.webp",
       "priceUnit": "",
@@ -1206,7 +1206,7 @@
     {
       "id": "burgers-8",
       "name": "X-vinagrete",
-      "price": 16.0,
+      "price": 16,
       "description": "Pão, Hambúrguer, Vinagrete e Queijo",
       "image": "/assets/menu/cb8230790a54c2c0d28892a4.webp",
       "priceUnit": "",
@@ -1388,7 +1388,7 @@
     {
       "id": "omeletes-0",
       "name": "Tradicional",
-      "price": 22.0,
+      "price": 22,
       "description": "2 ovos, queijo e presunto",
       "image": "/assets/menu/4a9ec78ed4b5fd359977c9ed.webp",
       "priceUnit": "",
@@ -1401,7 +1401,7 @@
     {
       "id": "omeletes-1",
       "name": "Peito de Peru",
-      "price": 24.0,
+      "price": 24,
       "description": "2 ovos, peito de peru e queijo branco",
       "image": "/assets/menu/d2fce3180e95384fb6e305c9.webp",
       "priceUnit": "",
@@ -1414,7 +1414,7 @@
     {
       "id": "omeletes-2",
       "name": "Frango",
-      "price": 23.0,
+      "price": 23,
       "description": "2 ovos, frango desfiado e queijo",
       "image": "/assets/menu/0be2f6c255b83d6c08e0e002.webp",
       "priceUnit": "",
@@ -1427,7 +1427,7 @@
     {
       "id": "omeletes-3",
       "name": "Quatro-Queijos",
-      "price": 30.0,
+      "price": 30,
       "description": "2 ovos, mussarela, catupiry, cheddar e parmesão",
       "image": "/assets/menu/3ef4e7ae14bea2627a7cccf5.webp",
       "priceUnit": "",
@@ -1505,7 +1505,7 @@
     {
       "id": "porcoes-1",
       "name": "Contrafilé",
-      "price": 65.0,
+      "price": 65,
       "description": "",
       "image": "/assets/menu/1c0b5b3fd5505088b1d8c327.webp",
       "priceUnit": "",
@@ -1557,7 +1557,7 @@
     {
       "id": "porcoes-5",
       "name": "Salame",
-      "price": 55.0,
+      "price": 55,
       "description": "",
       "image": "/assets/menu/bea2bf4a0bc1b3e9a8203b58.webp",
       "priceUnit": "",
@@ -1583,7 +1583,7 @@
     {
       "id": "pizzas-grandes-0",
       "name": "Atum",
-      "price": 60.0,
+      "price": 60,
       "description": "Atum ralado e cebola",
       "image": "/assets/menu/b4b8c86e54ddcc0bbf63cabe.webp",
       "priceUnit": "",
@@ -1596,7 +1596,7 @@
     {
       "id": "pizzas-grandes-1",
       "name": "Atum com Queijo",
-      "price": 65.0,
+      "price": 65,
       "description": "Atum ralado, cebola e mussarela",
       "image": "/assets/menu/0a92dd9454537b07bc74bb13.webp",
       "priceUnit": "",
@@ -1609,7 +1609,7 @@
     {
       "id": "pizzas-grandes-2",
       "name": "Calabresa",
-      "price": 60.0,
+      "price": 60,
       "description": "Calabresa Fatiada com cebola em rodelas",
       "image": "/assets/menu/d4eaa0e82f5244924550cab4.webp",
       "priceUnit": "",
@@ -1622,7 +1622,7 @@
     {
       "id": "pizzas-grandes-3",
       "name": "Frango com Catupiry",
-      "price": 60.0,
+      "price": 60,
       "description": "Frango desfiado coberta com Catupiry",
       "image": "/assets/menu/78fc76de36f68bdc1f755fc0.webp",
       "priceUnit": "",
@@ -1635,7 +1635,7 @@
     {
       "id": "pizzas-grandes-4",
       "name": "Frango com Catupiry e Milho",
-      "price": 58.0,
+      "price": 58,
       "description": "Frango desfiado coberto com Milho e Catupiry",
       "image": "/assets/menu/9ebad3851ff3eeb7c57f402a.webp",
       "priceUnit": "",
@@ -1648,7 +1648,7 @@
     {
       "id": "pizzas-grandes-5",
       "name": "Marguerita",
-      "price": 60.0,
+      "price": 60,
       "description": "Mussarela, Tomate e Manjericão",
       "image": "/assets/menu/306eb295be804b90a096efb9.webp",
       "priceUnit": "",
@@ -1661,7 +1661,7 @@
     {
       "id": "pizzas-grandes-6",
       "name": "Mussarela",
-      "price": 60.0,
+      "price": 60,
       "description": "Mussarela, Tomate e Orégano",
       "image": "/assets/menu/02ea8f98aedb2420fd30b7eb.webp",
       "priceUnit": "",
@@ -1674,7 +1674,7 @@
     {
       "id": "pizzas-grandes-7",
       "name": "Napolitana",
-      "price": 60.0,
+      "price": 60,
       "description": "Mussarela, Rodelas de Tomate e Parmesão ralado",
       "image": "/assets/menu/0ef0c1b69568e2c151b2262b.webp",
       "priceUnit": "",
@@ -1687,7 +1687,7 @@
     {
       "id": "pizzas-grandes-8",
       "name": "Peito de Peru com Queijo",
-      "price": 65.0,
+      "price": 65,
       "description": "Peito de Peru coberta com Mussarela",
       "image": "/assets/menu/45354b3a1822e72a39c0dac9.webp",
       "priceUnit": "",
@@ -1700,7 +1700,7 @@
     {
       "id": "pizzas-grandes-9",
       "name": "Portuguesa",
-      "price": 65.0,
+      "price": 65,
       "description": "",
       "image": "/assets/menu/7272afdf86134494b7368eea.webp",
       "priceUnit": "",
@@ -1713,7 +1713,7 @@
     {
       "id": "pizzas-grandes-10",
       "name": "4 Queijos",
-      "price": 65.0,
+      "price": 65,
       "description": "",
       "image": "/assets/menu/2f8e1d55a64b8a5eeea522c6.webp",
       "priceUnit": "",
@@ -1726,7 +1726,7 @@
     {
       "id": "pizzas-grandes-11",
       "name": "Toscana",
-      "price": 60.0,
+      "price": 60,
       "description": "",
       "image": "/assets/menu/ba3dfcf80bf57ede383de5b8.webp",
       "priceUnit": "",
@@ -1739,7 +1739,7 @@
     {
       "id": "pizzas-grandes-12",
       "name": "A moda da Casa",
-      "price": 65.0,
+      "price": 65,
       "description": "Ao modo do cliente",
       "image": "/assets/menu/4166d5aa07b064ed2a63d11b.webp",
       "priceUnit": "",
@@ -1752,7 +1752,7 @@
     {
       "id": "pizzas-grandes-13",
       "name": "Borda de catupiry ou cheddar",
-      "price": 8.0,
+      "price": 8,
       "description": "Adicional para qualquer pizza",
       "image": "/assets/menu/cb7cd9012bf2e9a6d331df10.webp",
       "priceUnit": "",
@@ -1765,7 +1765,7 @@
     {
       "id": "bebidas-0",
       "name": "Suco de Laranja",
-      "price": 15.0,
+      "price": 15,
       "description": "",
       "image": "/assets/menu/17847465b88d1cdc848ffbaf.webp",
       "priceUnit": "",
@@ -1804,7 +1804,7 @@
     {
       "id": "bebidas-3",
       "name": "Suco de Polpa com água",
-      "price": 12.0,
+      "price": 12,
       "description": "",
       "image": "/assets/menu/34f605ae92168b0a7e47fa9e.webp",
       "priceUnit": "",
@@ -1817,7 +1817,7 @@
     {
       "id": "bebidas-4",
       "name": "Suco de Polpa com leite",
-      "price": 13.0,
+      "price": 13,
       "description": "",
       "image": "/assets/menu/66601d130f9ebe25a684ff56.webp",
       "priceUnit": "",
@@ -1830,7 +1830,7 @@
     {
       "id": "bebidas-5",
       "name": "Sucos Naturais",
-      "price": 12.0,
+      "price": 12,
       "description": "Limão, Abacaxi, Melão, Maracujá, Morango, Melancia, Tangerina",
       "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
       "priceUnit": "",
@@ -1856,7 +1856,7 @@
     {
       "id": "bebidas-7",
       "name": "Suco Natural com Leite",
-      "price": 14.0,
+      "price": 14,
       "description": "",
       "image": "/assets/menu/b15aa2eb6f1f9fc793890861.webp",
       "priceUnit": "",
@@ -1882,7 +1882,7 @@
     {
       "id": "bebidas-9",
       "name": "Iogurte com Leite e Fruta",
-      "price": 17.0,
+      "price": 17,
       "description": "",
       "image": "/assets/menu/0aa0a14ee67a52d28975c0e8.webp",
       "priceUnit": "",
@@ -1895,7 +1895,7 @@
     {
       "id": "bebidas-10",
       "name": "Vitamina com Leite",
-      "price": 15.0,
+      "price": 15,
       "description": "",
       "image": "/assets/menu/f552aa428db68043d38bd774.webp",
       "priceUnit": "",
@@ -1908,7 +1908,7 @@
     {
       "id": "bebidas-11",
       "name": "Vitamina com Laranja",
-      "price": 18.0,
+      "price": 18,
       "description": "",
       "image": "/assets/menu/fc521b2bef7a7ef4a004263b.webp",
       "priceUnit": "",
@@ -2337,7 +2337,7 @@
     {
       "id": "lanches-de-metro-9",
       "name": "Mortadela Ceratti e queijo prato",
-      "price": 105.0,
+      "price": 105,
       "description": "",
       "image": "/assets/menu/5c6ac9ab75748e752e74ea51.webp",
       "priceUnit": "",
@@ -2689,5 +2689,6 @@
     "paragraphs": [],
     "terms": [],
     "faq": []
-  }
+  },
+  "updatedAt": "2026-11-03T20:06:32.514Z"
 }
