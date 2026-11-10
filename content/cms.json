@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "2dd53b01-90df-4a2f-8825-f9a4d35ed81f",
+  "revision": "4a967f00-6b47-4402-ad37-fc6c69b73e3c",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -230,7 +230,7 @@
     },
     {
       "id": "cafeteria-2",
-      "name": "Média",
+      "name": "Média Coada",
       "price": 6,
       "description": "",
       "image": "/assets/menu/ec4dc31c635f1044002e7f7c.webp",
@@ -240,6 +240,19 @@
       "available": true,
       "categoryId": "cafeteria",
       "order": 2
+    },
+    {
+      "id": "items-43b3d15e-cc0f-4a27-b3bc-116122ebf90d",
+      "name": "Média Expressa",
+      "price": 9,
+      "description": "",
+      "image": "/assets/menu/ec4dc31c635f1044002e7f7c.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "cafeteria",
+      "order": 3
     },
     {
       "id": "cafeteria-3",
@@ -252,7 +265,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 3
+      "order": 4
     },
     {
       "id": "cafeteria-4",
@@ -265,7 +278,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 4
+      "order": 5
     },
     {
       "id": "cafeteria-5",
@@ -278,7 +291,7 @@
       "featured": true,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 5
+      "order": 6
     },
     {
       "id": "cafeteria-6",
@@ -291,7 +304,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 6
+      "order": 7
     },
     {
       "id": "cafeteria-7",
@@ -304,7 +317,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 7
+      "order": 8
     },
     {
       "id": "cafeteria-8",
@@ -317,7 +330,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 8
+      "order": 9
     },
     {
       "id": "cafeteria-9",
@@ -330,7 +343,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 9
+      "order": 10
     },
     {
       "id": "cafeteria-10",
@@ -343,7 +356,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 10
+      "order": 11
     },
     {
       "id": "cafeteria-11",
@@ -356,7 +369,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 11
+      "order": 12
     },
     {
       "id": "cafeteria-12",
@@ -369,7 +382,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 12
+      "order": 13
     },
     {
       "id": "cafeteria-13",
@@ -382,7 +395,7 @@
       "featured": false,
       "available": true,
       "categoryId": "cafeteria",
-      "order": 13
+      "order": 14
     },
     {
       "id": "matinais-0",
@@ -476,6 +489,19 @@
       "order": 6
     },
     {
+      "id": "items-192e6aac-001a-4b67-929b-ee0adddba5c0",
+      "name": "Baguete com Manteiga",
+      "price": 9,
+      "description": "",
+      "image": "/assets/menu/e21158575c741a05b19751a4.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "matinais",
+      "order": 7
+    },
+    {
       "id": "matinais-7",
       "name": "Fatia Pão de Forma com Manteiga",
       "price": 4,
@@ -486,7 +512,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 7
+      "order": 8
     },
     {
       "id": "matinais-8",
@@ -499,7 +525,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 8
+      "order": 9
     },
     {
       "id": "matinais-9",
@@ -512,7 +538,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 9
+      "order": 10
     },
     {
       "id": "salgados-0",
@@ -708,19 +734,6 @@
       "available": true,
       "categoryId": "croissant",
       "order": 3
-    },
-    {
-      "id": "croissant-4",
-      "name": "A Moda da Casa (cortado com 2 recheios)",
-      "price": 14.9,
-      "description": "",
-      "image": "/assets/menu/0a528b44d4d962e4311919a5.webp",
-      "priceUnit": "",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "croissant",
-      "order": 4
     },
     {
       "id": "lanches-tradicionais-0",
@@ -998,7 +1011,7 @@
     {
       "id": "lanches-tradicionais-21",
       "name": "Pão com Ovo",
-      "price": 9,
+      "price": 12,
       "description": "Pão Francês e Ovo na chapa",
       "image": "/assets/menu/44f2d673d0b548a6cf9f7f7b.webp",
       "priceUnit": "",
@@ -1007,6 +1020,19 @@
       "available": true,
       "categoryId": "lanches-tradicionais",
       "order": 21
+    },
+    {
+      "id": "items-9cfa78fd-15b8-414f-8a84-c7e1d3446188",
+      "name": "Pão Integral com Ovo",
+      "price": 14,
+      "description": "Pão Integral e Ovo na chapa",
+      "image": "/assets/menu/44f2d673d0b548a6cf9f7f7b.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "lanches-tradicionais",
+      "order": 22
     },
     {
       "id": "lanches-tradicionais-22",
@@ -1019,7 +1045,20 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 22
+      "order": 23
+    },
+    {
+      "id": "items-b531d87e-cbef-42a1-b325-a62678c3789a",
+      "name": "Pão com Ovo e Bacon",
+      "price": 15,
+      "description": "Pão Francês, Ovo e Bacon",
+      "image": "/assets/menu/0169ac9ae95991c351487eb9.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "lanches-tradicionais",
+      "order": 24
     },
     {
       "id": "lanches-tradicionais-23",
@@ -1032,7 +1071,7 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 23
+      "order": 25
     },
     {
       "id": "lanches-tradicionais-24",
@@ -1045,7 +1084,7 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 24
+      "order": 26
     },
     {
       "id": "lanches-tradicionais-25",
@@ -1058,7 +1097,7 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 25
+      "order": 27
     },
     {
       "id": "lanches-tradicionais-26",
@@ -1071,7 +1110,7 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 26
+      "order": 28
     },
     {
       "id": "lanches-tradicionais-27",
@@ -1084,7 +1123,7 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 27
+      "order": 29
     },
     {
       "id": "lanches-tradicionais-28",
@@ -1097,7 +1136,7 @@
       "featured": false,
       "available": true,
       "categoryId": "lanches-tradicionais",
-      "order": 28
+      "order": 30
     },
     {
       "id": "burgers-0",
@@ -1893,6 +1932,19 @@
       "order": 9
     },
     {
+      "id": "items-7647d3e9-78a7-47ab-9a1b-0ac6f70bcf6d",
+      "name": "Iogurte com Leite",
+      "price": 13,
+      "description": "",
+      "image": "/assets/menu/0aa0a14ee67a52d28975c0e8.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 10
+    },
+    {
       "id": "bebidas-10",
       "name": "Vitamina com Leite",
       "price": 15,
@@ -1903,7 +1955,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 10
+      "order": 11
     },
     {
       "id": "bebidas-11",
@@ -1916,7 +1968,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 11
+      "order": 12
     },
     {
       "id": "bebidas-12",
@@ -1929,7 +1981,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 12
+      "order": 13
     },
     {
       "id": "bebidas-13",
@@ -1942,7 +1994,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 13
+      "order": 14
     },
     {
       "id": "bebidas-14",
@@ -1955,7 +2007,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 14
+      "order": 15
     },
     {
       "id": "bebidas-15",
@@ -1968,7 +2020,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 15
+      "order": 16
     },
     {
       "id": "bebidas-16",
@@ -1981,7 +2033,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 16
+      "order": 17
     },
     {
       "id": "bebidas-17",
@@ -1994,7 +2046,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 17
+      "order": 18
     },
     {
       "id": "bebidas-18",
@@ -2007,7 +2059,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 18
+      "order": 19
     },
     {
       "id": "bebidas-19",
@@ -2020,7 +2072,7 @@
       "featured": true,
       "available": true,
       "categoryId": "bebidas",
-      "order": 19
+      "order": 20
     },
     {
       "id": "bebidas-20",
@@ -2033,7 +2085,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 20
+      "order": 21
     },
     {
       "id": "bebidas-21",
@@ -2046,7 +2098,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 21
+      "order": 22
     },
     {
       "id": "bebidas-22",
@@ -2059,7 +2111,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 22
+      "order": 23
     },
     {
       "id": "bebidas-23",
@@ -2072,7 +2124,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 23
+      "order": 24
     },
     {
       "id": "adicionais-0",
@@ -2690,5 +2742,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-10T15:26:03.274Z"
+  "updatedAt": "2026-11-10T15:33:55.260Z"
 }
