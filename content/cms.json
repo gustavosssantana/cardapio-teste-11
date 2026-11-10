@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "4a967f00-6b47-4402-ad37-fc6c69b73e3c",
+  "revision": "photos-1794348826678",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -246,7 +246,7 @@
       "name": "Média Expressa",
       "price": 9,
       "description": "",
-      "image": "/assets/menu/ec4dc31c635f1044002e7f7c.webp",
+      "image": "/assets/menu/media-expressa-20261110.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -493,7 +493,7 @@
       "name": "Baguete com Manteiga",
       "price": 9,
       "description": "",
-      "image": "/assets/menu/e21158575c741a05b19751a4.webp",
+      "image": "/assets/menu/baguete-manteiga-20261110.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -1026,7 +1026,7 @@
       "name": "Pão Integral com Ovo",
       "price": 14,
       "description": "Pão Integral e Ovo na chapa",
-      "image": "/assets/menu/44f2d673d0b548a6cf9f7f7b.webp",
+      "image": "/assets/menu/pao-integral-ovo-20261110.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -1052,7 +1052,7 @@
       "name": "Pão com Ovo e Bacon",
       "price": 15,
       "description": "Pão Francês, Ovo e Bacon",
-      "image": "/assets/menu/0169ac9ae95991c351487eb9.webp",
+      "image": "/assets/menu/pao-ovo-bacon-20261110.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -1936,7 +1936,7 @@
       "name": "Iogurte com Leite",
       "price": 13,
       "description": "",
-      "image": "/assets/menu/0aa0a14ee67a52d28975c0e8.webp",
+      "image": "/assets/menu/iogurte-leite-20261110.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -2742,5 +2742,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-10T15:33:55.260Z"
+  "updatedAt": "2026-11-10T22:13:46.678Z"
 }
