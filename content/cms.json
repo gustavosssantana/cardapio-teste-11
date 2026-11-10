@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "photos-1794348826678",
+  "revision": "eabad50c-e3af-4548-89ff-c8e77c319e83",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -881,7 +881,7 @@
     {
       "id": "lanches-tradicionais-11",
       "name": "Misto Quente Pão Integral",
-      "price": 13,
+      "price": 15,
       "description": "Pão Integral, Presunto e Queijo",
       "image": "/assets/menu/6f02103b1f14fa5bac8ad803.webp",
       "priceUnit": "",
@@ -2742,5 +2742,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-10T22:13:46.678Z"
+  "updatedAt": "2026-11-10T22:31:30.223Z"
 }
