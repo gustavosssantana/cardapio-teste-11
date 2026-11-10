@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "37061f4b-87c7-4af5-adc7-123649fd0db4",
+  "revision": "c5dc1f60-44e2-434d-a25f-6c88033c5a6b",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -361,7 +361,7 @@
     {
       "id": "cafeteria-12",
       "name": "Chá Diversos Sabores",
-      "price": 5,
+      "price": 6,
       "description": "",
       "image": "/assets/menu/2178a57e79c67fbc20ce3713.webp",
       "priceUnit": "",
@@ -387,7 +387,7 @@
     {
       "id": "matinais-0",
       "name": "Pão na Chapa",
-      "price": 6,
+      "price": 7,
       "description": "",
       "image": "/assets/menu/5df235c4253881117debc0b9.webp",
       "priceUnit": "",
@@ -400,7 +400,7 @@
     {
       "id": "matinais-1",
       "name": "Pão com manteiga",
-      "price": 6,
+      "price": 7,
       "description": "",
       "image": "/assets/menu/a56ed12ba7149d30705c96cc.webp",
       "priceUnit": "",
@@ -413,7 +413,7 @@
     {
       "id": "matinais-2",
       "name": "Pão com Requeijão",
-      "price": 8,
+      "price": 9,
       "description": "",
       "image": "/assets/menu/08aa03a7061638db1d05a919.webp",
       "priceUnit": "",
@@ -426,7 +426,7 @@
     {
       "id": "matinais-3",
       "name": "Pão Integral com Manteiga",
-      "price": 7,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/c225d187340c5e9851377ca0.webp",
       "priceUnit": "",
@@ -439,7 +439,7 @@
     {
       "id": "matinais-4",
       "name": "Pão Integral com Requeijão",
-      "price": 8,
+      "price": 10,
       "description": "",
       "image": "/assets/menu/3f36a9d14c10d8a96979aefb.webp",
       "priceUnit": "",
@@ -452,7 +452,7 @@
     {
       "id": "matinais-5",
       "name": "Bisnaga com Manteiga",
-      "price": 7.5,
+      "price": 8,
       "description": "",
       "image": "/assets/menu/ddff98f670e6ae214930bf00.webp",
       "priceUnit": "",
@@ -738,7 +738,7 @@
     {
       "id": "lanches-tradicionais-1",
       "name": "Bauru",
-      "price": 14,
+      "price": 16,
       "description": "Pão Francês, Presunto, Queijo, Tomate",
       "image": "/assets/menu/bbf8150d9913e12977ee7be0.webp",
       "priceUnit": "",
@@ -1011,7 +1011,7 @@
     {
       "id": "lanches-tradicionais-22",
       "name": "Pão com Ovo e Queijo",
-      "price": 12.9,
+      "price": 15,
       "description": "",
       "image": "/assets/menu/0169ac9ae95991c351487eb9.webp",
       "priceUnit": "",
@@ -2690,5 +2690,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-03T20:06:32.514Z"
+  "updatedAt": "2026-11-10T15:23:06.744Z"
 }
