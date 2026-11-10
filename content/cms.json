@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "c5dc1f60-44e2-434d-a25f-6c88033c5a6b",
+  "revision": "2dd53b01-90df-4a2f-8825-f9a4d35ed81f",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -621,7 +621,7 @@
     {
       "id": "salgados-8",
       "name": "Torta de Frango (Fatia)",
-      "price": 10,
+      "price": 12,
       "description": "",
       "image": "/assets/menu/2bbeb04990e2eb3636e8c28a.webp",
       "priceUnit": "",
@@ -829,7 +829,7 @@
     {
       "id": "lanches-tradicionais-8",
       "name": "Misto Quente/Frio",
-      "price": 13,
+      "price": 14,
       "description": "Pão Francês, Presunto e Queijo",
       "image": "/assets/menu/51051246a9fdf9a5bb36eb54.webp",
       "priceUnit": "",
@@ -2690,5 +2690,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-10T15:23:06.744Z"
+  "updatedAt": "2026-11-10T15:26:03.274Z"
 }
