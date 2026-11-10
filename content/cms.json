@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "eabad50c-e3af-4548-89ff-c8e77c319e83",
+  "revision": "635424da-f8d0-466d-8028-97156a1af662",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -906,9 +906,9 @@
     },
     {
       "id": "lanches-tradicionais-13",
-      "name": "Mortadela Marba",
+      "name": "Mortadela Marba ou Ouro",
       "price": 14,
-      "description": "Pão Francês e Mortadela Marba",
+      "description": "Pão Francês e Mortadela Marba ou Ouro",
       "image": "/assets/menu/79f78a6b7b4b3b3fb96a66ec.webp",
       "priceUnit": "",
       "group": "",
@@ -932,9 +932,9 @@
     },
     {
       "id": "lanches-tradicionais-15",
-      "name": "Mortadela Marba com Queijo",
+      "name": "Mortadela Marba ou Ouro com Queijo",
       "price": 16,
-      "description": "Pão Francês, Mortadela Marba e Queijo",
+      "description": "Pão Francês, Mortadela Marba ou Ouro e Queijo",
       "image": "/assets/menu/52b04ab058f8035e26bba121.webp",
       "priceUnit": "",
       "group": "",
@@ -1075,9 +1075,9 @@
     },
     {
       "id": "lanches-tradicionais-24",
-      "name": "Queijo Branco e Pão de Forma",
+      "name": "Queijo Branco no Pão de Forma ou Integral",
       "price": 16,
-      "description": "Pão de forma e Queijo Fresco Branco, Tomate e Orégano",
+      "description": "Pão de Forma ou Integral e Queijo Fresco Branco, Tomate e Orégano",
       "image": "/assets/menu/f0264e111f5765e0936a0021.webp",
       "priceUnit": "",
       "group": "",
@@ -1088,9 +1088,9 @@
     },
     {
       "id": "lanches-tradicionais-25",
-      "name": "Queijo Prato",
+      "name": "Queijo Prato ou Mussarela",
       "price": 15,
-      "description": "Pão Francês e Queijo Prato",
+      "description": "Pão Francês e Queijo Prato ou Mussarela",
       "image": "/assets/menu/f54fb9e7fe3d389024e0a913.webp",
       "priceUnit": "",
       "group": "",
@@ -1129,7 +1129,7 @@
       "id": "lanches-tradicionais-28",
       "name": "Bauru na baguete de parmesão",
       "price": 22,
-      "description": "",
+      "description": "Baguete de Parmesão, Presunto, Queijo, Tomate",
       "image": "/assets/menu/3a35cb74a4fba1a49d968d91.webp",
       "priceUnit": "",
       "group": "",
@@ -2742,5 +2742,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-10T22:31:30.223Z"
+  "updatedAt": "2026-11-10T22:34:51.785Z"
 }
