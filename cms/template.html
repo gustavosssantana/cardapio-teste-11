@@ -2,7 +2,7 @@
 
 <html lang="pt-BR"><head><meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
-<meta content="#0B112B" name="theme-color"/>
+<meta content="#8E1530" name="theme-color"/>
 <link href="/assets/menu-promotions.css" rel="stylesheet"/></head><body>
 <title>Cardápio Center Chic</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -40,23 +40,21 @@ a{color:inherit}
 
 /* ================= Capa ================= */
 .capa{position:relative;color:#fff;background:
-  radial-gradient(120% 90% at 50% -10%,#24306A 0%,#10183A 58%,#0B112B 100%);
+  radial-gradient(120% 90% at 50% -10%,#B21E42 0%,#8E1530 55%,#5E0D20 100%);
   overflow:hidden;text-align:center}
 .capa::before{content:"";position:absolute;inset:0;opacity:.07;background-image:
   radial-gradient(circle at 25% 25%,#EAD7A8 1.2px,transparent 1.6px),
   radial-gradient(circle at 75% 75%,#EAD7A8 1.2px,transparent 1.6px);background-size:26px 26px}
 .capa .embrulho{position:relative;padding-block:26px 30px}
-.brasao{width:132px;height:132px;margin:0 auto;border-radius:50%;padding:3px;
-  background:conic-gradient(from 210deg,var(--ouro-claro),var(--ouro),#F5E6BE,var(--ouro),var(--ouro-claro));
-  box-shadow:0 14px 34px -10px rgba(0,0,0,.55)}
-.brasao img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid #0B112B}
+.brasao{width:150px;margin:0 auto}
+.brasao img{width:100%;height:auto;display:block;filter:drop-shadow(0 10px 16px rgba(40,0,12,.45))}
 .capa .rotulo{margin:14px 0 0;font-family:var(--f-display);font-size:11px;letter-spacing:.34em;color:var(--ouro-claro)}
 .capa h1{margin:4px 0 0;font-family:var(--f-display);font-weight:700;font-size:clamp(32px,9vw,44px);letter-spacing:.04em;line-height:1.05}
 .ornamento{display:flex;align-items:center;justify-content:center;gap:10px;margin:12px auto 0;color:var(--ouro-vivo)}
 .ornamento::before,.ornamento::after{content:"";height:1px;width:56px;background:linear-gradient(90deg,transparent,currentColor)}
 .ornamento::after{transform:scaleX(-1)}
 .ornamento svg{width:16px;height:16px}
-.capa .sub{margin:10px auto 0;max-width:34ch;font-size:15px;color:#C9CDE0}
+.capa .sub{margin:10px auto 0;max-width:34ch;font-size:15px;color:#F3DCE2}
 .capa .acoes{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:18px}
 .pilula{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 16px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:700}
 .pilula svg{width:16px;height:16px}
@@ -148,7 +146,7 @@ a{color:inherit}
 
 /* ================= Rodapé ================= */
 .rodape{margin-top:44px;padding-block:30px 130px;text-align:center;color:var(--suave);font-size:14px;border-top:1px solid var(--linha)}
-.rodape .brasao{width:72px;height:72px;box-shadow:none;animation:none}
+.rodape .brasao{width:84px;animation:none}
 .rodape .brasao::after{display:none}
 .rodape strong{color:var(--tinta)}
 .rodape .fino{margin-top:14px;font-size:12px}
@@ -190,7 +188,7 @@ a{color:inherit}
 @keyframes entra{from{transform:scale(.7) rotate(-8deg);opacity:0}}
 @keyframes sobeTexto{from{transform:translateY(8px);opacity:0}}
 .brasao{position:relative}
-.brasao::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 35%,rgba(255,244,210,.65) 50%,transparent 65%);background-size:250% 100%;background-position:120% 0;animation:brilho 1.6s .6s ease both;pointer-events:none}
+.brasao::after{display:none;content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 35%,rgba(255,244,210,.65) 50%,transparent 65%);background-size:250% 100%;background-position:120% 0;animation:brilho 1.6s .6s ease both;pointer-events:none}
 @keyframes brilho{to{background-position:-60% 0}}
 @media (prefers-reduced-motion:reduce){.brasao,.brasao::after,.capa .rotulo,.capa h1,.capa .ornamento,.passo,.aviso,.atendente{animation:none}}
 @media (min-width:760px){.folha{left:50%;right:auto;bottom:24px;width:520px;border-radius:26px;margin-left:-260px;max-height:82%}}
@@ -256,7 +254,7 @@ a{color:inherit}
 </style>
 <header class="capa">
 <div class="embrulho">
-<div class="brasao"><img alt="Brasão da Padaria Center Chic" src="/assets/menu/logo-center-chic-vinho.webp"/></div>
+<div class="brasao"><img alt="Brasão da Padaria Center Chic" src="/assets/menu/logo-center-chic.webp"/></div>
 <p class="rotulo">PADARIA · CONFEITARIA</p>
 <h1>Center Chic</h1>
 <div aria-hidden="true" class="ornamento"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"></path></svg></div>
@@ -298,7 +296,7 @@ a{color:inherit}
 <div id="secoes"></div>
 <p class="vazio" hidden="" id="vazio"></p>
 <footer class="rodape">
-<div class="brasao"><img alt="" src="/assets/menu/logo-center-chic-vinho.webp"/></div>
+<div class="brasao"><img alt="" src="/assets/menu/logo-center-chic.webp"/></div>
 <p><strong>Padaria Center Chic</strong></p>
 <div class="info">
 <a href="https://www.google.com.br/maps/place/Padaria+Center+Chic/@-23.576656,-46.7429124,17z" rel="noopener" target="_blank"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span><b>Endereço</b>Av. Eng. Heitor Antônio Eiras Garcia, 724<br/>Jardim Bonfiglioli · São Paulo</span></a>
