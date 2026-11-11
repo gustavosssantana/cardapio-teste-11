@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "635424da-f8d0-466d-8028-97156a1af662",
+  "revision": "bcad69a2-8828-45c5-9445-cf34c297ae42",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -1816,7 +1816,7 @@
     },
     {
       "id": "bebidas-1",
-      "name": "Suco de laranja 500 ml (viagem)",
+      "name": "Suco de Laranja 500 ml (viagem)",
       "price": 17.9,
       "description": "",
       "image": "/assets/menu/191b28e42058da6044242b41.webp",
@@ -1825,7 +1825,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 1
+      "order": 2
     },
     {
       "id": "bebidas-2",
@@ -1838,11 +1838,11 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 2
+      "order": 1
     },
     {
       "id": "bebidas-3",
-      "name": "Suco de Polpa com água",
+      "name": "Suco de Polpa com Água",
       "price": 12,
       "description": "",
       "image": "/assets/menu/34f605ae92168b0a7e47fa9e.webp",
@@ -1851,11 +1851,11 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 3
+      "order": 12
     },
     {
       "id": "bebidas-4",
-      "name": "Suco de Polpa com leite",
+      "name": "Suco de Polpa com Leite",
       "price": 13,
       "description": "",
       "image": "/assets/menu/66601d130f9ebe25a684ff56.webp",
@@ -1864,12 +1864,12 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 4
+      "order": 13
     },
     {
       "id": "bebidas-5",
-      "name": "Sucos Naturais",
-      "price": 12,
+      "name": "Suco Natural",
+      "price": 14,
       "description": "Limão, Abacaxi, Melão, Maracujá, Morango, Melancia, Tangerina",
       "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
       "priceUnit": "",
@@ -1877,7 +1877,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 5
+      "order": 3
     },
     {
       "id": "bebidas-6",
@@ -1890,7 +1890,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 6
+      "order": 23
     },
     {
       "id": "bebidas-7",
@@ -1903,12 +1903,12 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 7
+      "order": 6
     },
     {
       "id": "bebidas-8",
       "name": "Suco Detox",
-      "price": 18.9,
+      "price": 19.9,
       "description": "Limão, Abacaxi, Couve e Gengibre",
       "image": "/assets/menu/4995ce524d75f609594ef15d.webp",
       "priceUnit": "",
@@ -1916,7 +1916,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 8
+      "order": 14
     },
     {
       "id": "bebidas-9",
@@ -1929,7 +1929,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 9
+      "order": 24
     },
     {
       "id": "items-7647d3e9-78a7-47ab-9a1b-0ac6f70bcf6d",
@@ -1942,7 +1942,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 10
+      "order": 25
     },
     {
       "id": "bebidas-10",
@@ -1955,7 +1955,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 11
+      "order": 26
     },
     {
       "id": "bebidas-11",
@@ -1968,7 +1968,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 12
+      "order": 27
     },
     {
       "id": "bebidas-12",
@@ -1981,7 +1981,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 13
+      "order": 28
     },
     {
       "id": "bebidas-13",
@@ -1994,7 +1994,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 14
+      "order": 29
     },
     {
       "id": "bebidas-14",
@@ -2007,7 +2007,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 15
+      "order": 30
     },
     {
       "id": "bebidas-15",
@@ -2020,11 +2020,11 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 16
+      "order": 31
     },
     {
       "id": "bebidas-16",
-      "name": "Açaí batido com Água",
+      "name": "Suco de Açaí com Água",
       "price": 15.9,
       "description": "",
       "image": "/assets/menu/130a1c71accc28c5dfc602cc.webp",
@@ -2033,11 +2033,11 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 17
+      "order": 16
     },
     {
       "id": "bebidas-17",
-      "name": "Açaí batido com Leite",
+      "name": "Suco de Açaí com Leite",
       "price": 17.9,
       "description": "",
       "image": "/assets/menu/b2f1e3499f58d05ce547b963.webp",
@@ -2046,11 +2046,11 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 18
+      "order": 17
     },
     {
       "id": "bebidas-18",
-      "name": "Açaí batido 500ml para Viagem",
+      "name": "Suco de Açaí 500 ml (viagem)",
       "price": 26.9,
       "description": "",
       "image": "/assets/menu/7a0777137eaeb4d766df617b.webp",
@@ -2059,7 +2059,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 19
+      "order": 20
     },
     {
       "id": "bebidas-19",
@@ -2072,11 +2072,11 @@
       "featured": true,
       "available": true,
       "categoryId": "bebidas",
-      "order": 20
+      "order": 32
     },
     {
       "id": "bebidas-20",
-      "name": "Suco Açaí com Fruta",
+      "name": "Suco de Açaí com 1 Fruta",
       "price": 17.9,
       "description": "",
       "image": "/assets/menu/c981a632c0b86af7c93b5a1b.webp",
@@ -2085,7 +2085,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 21
+      "order": 18
     },
     {
       "id": "bebidas-21",
@@ -2098,7 +2098,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 22
+      "order": 21
     },
     {
       "id": "bebidas-22",
@@ -2111,7 +2111,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 23
+      "order": 22
     },
     {
       "id": "bebidas-23",
@@ -2124,7 +2124,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bebidas",
-      "order": 24
+      "order": 33
     },
     {
       "id": "adicionais-0",
@@ -2723,6 +2723,123 @@
       "available": true,
       "categoryId": "bolos-confeitados",
       "order": 22
+    },
+    {
+      "id": "items-377fd8ab-75e6-4cae-be64-60bda207db69",
+      "name": "Suco Natural 1L",
+      "price": 27.9,
+      "description": "",
+      "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 4
+    },
+    {
+      "id": "items-77dd7461-e4ee-425d-a773-a36424c5c67c",
+      "name": "Suco Natural 500 ml (viagem)",
+      "price": 16.9,
+      "description": "",
+      "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 5
+    },
+    {
+      "id": "items-287120dc-055b-4290-a5b7-6e330c4c2c76",
+      "name": "Suco Natural com Leite 1L",
+      "price": 28.9,
+      "description": "",
+      "image": "/assets/menu/b15aa2eb6f1f9fc793890861.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 7
+    },
+    {
+      "id": "items-b2ed3312-f5c3-45cc-9508-37e59e3503d0",
+      "name": "Suco Natural com Leite 500 ml (viagem)",
+      "price": 24.9,
+      "description": "",
+      "image": "/assets/menu/b15aa2eb6f1f9fc793890861.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 8
+    },
+    {
+      "id": "items-e50aa2f1-93a5-4141-92ad-089ef07667e5",
+      "name": "Suco Natural + 1 Fruta",
+      "price": 18.9,
+      "description": "",
+      "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 9
+    },
+    {
+      "id": "items-82b939d0-2fde-4c4b-8021-0d464a13a984",
+      "name": "Suco Natural + 1 Fruta 1L",
+      "price": 34.9,
+      "description": "",
+      "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 10
+    },
+    {
+      "id": "items-8c382133-5def-4f36-945a-35200235793f",
+      "name": "Suco Natural + 1 Fruta 500 ml (viagem)",
+      "price": 24.9,
+      "description": "",
+      "image": "/assets/menu/8c049f43cac959c06ca7761a.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 11
+    },
+    {
+      "id": "items-d5dda950-1d63-4aff-adaa-d6d95d8d9fdd",
+      "name": "Suco Detox 500 ml (viagem)",
+      "price": 21.9,
+      "description": "Limão, Abacaxi, Couve e Gengibre",
+      "image": "/assets/menu/4995ce524d75f609594ef15d.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 15
+    },
+    {
+      "id": "items-0ccc8f72-855b-439c-aa71-42fbdb4bd265",
+      "name": "Suco de Açaí com Laranja",
+      "price": 18.9,
+      "description": "",
+      "image": "/assets/menu/c981a632c0b86af7c93b5a1b.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bebidas",
+      "order": 19
     }
   ],
   "promotions": [],
@@ -2742,5 +2859,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-10T22:34:51.785Z"
+  "updatedAt": "2026-11-11T14:40:26.112Z"
 }
