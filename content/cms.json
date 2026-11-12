@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "d64b13e0-d478-44f9-b022-b0d70f148e28",
+  "revision": "f7b35797-2d15-453d-890a-2acb855545c9",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -1792,7 +1792,7 @@
       "id": "pizzas-grandes-12",
       "name": "A moda da Casa",
       "price": 65,
-      "description": "Ao modo do cliente",
+      "description": "Ao modo do cliente, com 2 recheios",
       "image": "/assets/menu/4166d5aa07b064ed2a63d11b.webp",
       "priceUnit": "",
       "group": "",
@@ -2155,7 +2155,7 @@
     {
       "id": "adicionais-0",
       "name": "Bacon",
-      "price": 4.6,
+      "price": 4.9,
       "description": "",
       "image": "/assets/menu/3d2136bf4ae4232f26e7dbd0.webp",
       "priceUnit": "",
@@ -2166,11 +2166,11 @@
       "order": 0
     },
     {
-      "id": "adicionais-1",
-      "name": "Baguete",
-      "price": 6.2,
+      "id": "adicionais-2",
+      "name": "Carne/Frango",
+      "price": 13.9,
       "description": "",
-      "image": "/assets/menu/e21158575c741a05b19751a4.webp",
+      "image": "/assets/menu/8384106f8c63e90fd4bd4420.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -2179,11 +2179,11 @@
       "order": 1
     },
     {
-      "id": "adicionais-2",
-      "name": "Carne/Frango",
-      "price": 13.5,
+      "id": "adicionais-3",
+      "name": "Hambúrguer",
+      "price": 8.9,
       "description": "",
-      "image": "/assets/menu/8384106f8c63e90fd4bd4420.webp",
+      "image": "/assets/menu/92d9203383ca1b4b5642a483.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -2192,11 +2192,11 @@
       "order": 2
     },
     {
-      "id": "adicionais-3",
-      "name": "Hambúrguer",
-      "price": 8.1,
+      "id": "adicionais-4",
+      "name": "Manteiga/Requeijão",
+      "price": 3.9,
       "description": "",
-      "image": "/assets/menu/92d9203383ca1b4b5642a483.webp",
+      "image": "/assets/menu/d3bb1a69847e82ca76743a19.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -2205,11 +2205,11 @@
       "order": 3
     },
     {
-      "id": "adicionais-4",
-      "name": "Manteiga/Requeijão",
-      "price": 3.8,
+      "id": "adicionais-5",
+      "name": "Ovo",
+      "price": 3.9,
       "description": "",
-      "image": "/assets/menu/d3bb1a69847e82ca76743a19.webp",
+      "image": "/assets/menu/9df8dc9cc895598aa99d423b.webp",
       "priceUnit": "",
       "group": "",
       "featured": false,
@@ -2218,22 +2218,9 @@
       "order": 4
     },
     {
-      "id": "adicionais-5",
-      "name": "Ovo",
-      "price": 3.8,
-      "description": "",
-      "image": "/assets/menu/9df8dc9cc895598aa99d423b.webp",
-      "priceUnit": "",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "adicionais",
-      "order": 5
-    },
-    {
       "id": "adicionais-6",
-      "name": "Queijo",
-      "price": 6.2,
+      "name": "Queijo Prato ou Mussarela",
+      "price": 8.9,
       "description": "",
       "image": "/assets/menu/62805e5c58893f78eb70dab1.webp",
       "priceUnit": "",
@@ -2241,12 +2228,12 @@
       "featured": false,
       "available": true,
       "categoryId": "adicionais",
-      "order": 6
+      "order": 7
     },
     {
       "id": "adicionais-7",
       "name": "Salada/Vinagrete",
-      "price": 4.6,
+      "price": 4.9,
       "description": "",
       "image": "/assets/menu/1eced0c7530bafab4b628cc4.webp",
       "priceUnit": "",
@@ -2254,7 +2241,7 @@
       "featured": false,
       "available": true,
       "categoryId": "adicionais",
-      "order": 7
+      "order": 8
     },
     {
       "id": "adicionais-8",
@@ -2267,12 +2254,12 @@
       "featured": false,
       "available": true,
       "categoryId": "adicionais",
-      "order": 8
+      "order": 9
     },
     {
       "id": "adicionais-9",
       "name": "Salame",
-      "price": 6.5,
+      "price": 8.9,
       "description": "",
       "image": "/assets/menu/3b714e0c7fa64c1c58759016.webp",
       "priceUnit": "",
@@ -2280,12 +2267,12 @@
       "featured": false,
       "available": true,
       "categoryId": "adicionais",
-      "order": 9
+      "order": 5
     },
     {
       "id": "adicionais-10",
       "name": "Presunto",
-      "price": 6.5,
+      "price": 7.9,
       "description": "",
       "image": "/assets/menu/1d011538f3000442ad8578f3.webp",
       "priceUnit": "",
@@ -2293,7 +2280,7 @@
       "featured": false,
       "available": true,
       "categoryId": "adicionais",
-      "order": 10
+      "order": 6
     },
     {
       "id": "lanches-de-metro-0",
@@ -2454,100 +2441,9 @@
     {
       "id": "bolos-confeitados-0",
       "name": "Ferrero Rocher",
-      "price": 69.9,
+      "price": 74.9,
       "description": "",
       "image": "/assets/menu/058aab835e35a3fb41cc5fad.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 0
-    },
-    {
-      "id": "bolos-confeitados-1",
-      "name": "Morango com Chantilly",
-      "price": 69.9,
-      "description": "Recheio de Morango, Leite Condensado e Chantilly",
-      "image": "/assets/menu/f3d9a39df5f7c539d70a099f.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 1
-    },
-    {
-      "id": "bolos-confeitados-2",
-      "name": "Mousse de Chocolate",
-      "price": 69.9,
-      "description": "Recheio de Pão de Ló de Chocolate e Mousse de Chocolate",
-      "image": "/assets/menu/1aab761303093b4bca3ba415.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 2
-    },
-    {
-      "id": "bolos-confeitados-3",
-      "name": "Nozes",
-      "price": 69.9,
-      "description": "Recheio de Chantilly, Nozes e Leite Condensado",
-      "image": "/assets/menu/7aa9afd913991235b96ad42d.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 3
-    },
-    {
-      "id": "bolos-confeitados-4",
-      "name": "Bolo Prestígio",
-      "price": 69.9,
-      "description": "Recheio de Creme de Prestígio com Chantilly",
-      "image": "/assets/menu/1a65e7cb7ce9516ff47c1d6c.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 4
-    },
-    {
-      "id": "bolos-confeitados-5",
-      "name": "Sonho de Valsa",
-      "price": 69.9,
-      "description": "Recheio de Chantilly, Sonho de Valsa e Leite Condensado",
-      "image": "/assets/menu/b57fa10b86d77043c187b0be.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 5
-    },
-    {
-      "id": "bolos-confeitados-6",
-      "name": "Trufa de Chocolate",
-      "price": 69.9,
-      "description": "Pão de Ló, Chocolate e Creme de Trufa",
-      "image": "/assets/menu/f0d5ce11a0b419e5a30372ef.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 6
-    },
-    {
-      "id": "bolos-confeitados-7",
-      "name": "Cascata de Chocolate",
-      "price": 69.9,
-      "description": "Pão de Ló, Chocolate e Creme de Chocolate",
-      "image": "/assets/menu/a6032fde58d48a96ab57682e.webp",
       "priceUnit": "kg",
       "group": "",
       "featured": false,
@@ -2556,8 +2452,73 @@
       "order": 7
     },
     {
+      "id": "bolos-confeitados-2",
+      "name": "Mousse de Chocolate",
+      "price": 72.9,
+      "description": "Recheio de Pão de Ló de Chocolate e Mousse de Chocolate",
+      "image": "/assets/menu/1aab761303093b4bca3ba415.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 15
+    },
+    {
+      "id": "bolos-confeitados-3",
+      "name": "Doce de Leite com Nozes",
+      "price": 74.9,
+      "description": "",
+      "image": "/assets/menu/7aa9afd913991235b96ad42d.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 6
+    },
+    {
+      "id": "bolos-confeitados-4",
+      "name": "Prestígio",
+      "price": 72.9,
+      "description": "Recheio de Creme de Prestígio com Chantilly",
+      "image": "/assets/menu/1a65e7cb7ce9516ff47c1d6c.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 18
+    },
+    {
+      "id": "bolos-confeitados-5",
+      "name": "Sonho de Valsa",
+      "price": 72.9,
+      "description": "Recheio de Chantilly, Sonho de Valsa e Leite Condensado",
+      "image": "/assets/menu/b57fa10b86d77043c187b0be.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 22
+    },
+    {
+      "id": "bolos-confeitados-6",
+      "name": "Trufa",
+      "price": 76.9,
+      "description": "Pão de Ló, Chocolate e Creme de Trufa",
+      "image": "/assets/menu/f0d5ce11a0b419e5a30372ef.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 24
+    },
+    {
       "id": "bolos-confeitados-8",
-      "name": "Floresta Negra",
+      "name": "Floresta Negra com Morango ou Cereja",
       "price": 69.9,
       "description": "Pão de Ló, Chocolate, Cereja, Chantilly e Leite Condensado",
       "image": "/assets/menu/06a35b1c00c11894d7d12b44.webp",
@@ -2566,11 +2527,11 @@
       "featured": false,
       "available": true,
       "categoryId": "bolos-confeitados",
-      "order": 8
+      "order": 10
     },
     {
       "id": "bolos-confeitados-9",
-      "name": "Floresta Branca",
+      "name": "Floresta Branca com Cereja ou Morango",
       "price": 69.9,
       "description": "Cereja, Chantilly e Leite Condensado",
       "image": "/assets/menu/e91ea4b115b8af4f056bba16.webp",
@@ -2579,20 +2540,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bolos-confeitados",
-      "order": 9
-    },
-    {
-      "id": "bolos-confeitados-10",
-      "name": "Floresta Morango",
-      "price": 69.9,
-      "description": "Morango, Chantilly e Leite Condensado",
-      "image": "/assets/menu/5be27b02d308a98aea84f36c.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 10
+      "order": 8
     },
     {
       "id": "bolos-confeitados-11",
@@ -2605,12 +2553,12 @@
       "featured": false,
       "available": true,
       "categoryId": "bolos-confeitados",
-      "order": 11
+      "order": 3
     },
     {
       "id": "bolos-confeitados-12",
-      "name": "Bolo Ninho com Morango",
-      "price": 69.9,
+      "name": "Leite Ninho",
+      "price": 76.9,
       "description": "",
       "image": "/assets/menu/358ffa1759f10fa08582a890.webp",
       "priceUnit": "kg",
@@ -2618,66 +2566,14 @@
       "featured": false,
       "available": true,
       "categoryId": "bolos-confeitados",
-      "order": 12
+      "order": 11
     },
     {
       "id": "bolos-confeitados-13",
       "name": "Ouro Branco",
-      "price": 69.9,
+      "price": 72.9,
       "description": "",
       "image": "/assets/menu/ca3ae792ed61c671009a944b.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 13
-    },
-    {
-      "id": "bolos-confeitados-14",
-      "name": "Doce de Leite com Ameixa",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/24f2e995883f32f480da4a27.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 14
-    },
-    {
-      "id": "bolos-confeitados-15",
-      "name": "Doce de leite com coco",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/ed1a3a64e7ee4ce158bc56bd.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 15
-    },
-    {
-      "id": "bolos-confeitados-16",
-      "name": "Surpresa de Chocolate",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/99a1869286a1a699c4c7007e.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 16
-    },
-    {
-      "id": "bolos-confeitados-17",
-      "name": "Negresco",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/86850dd52270538b097a7230.webp",
       "priceUnit": "kg",
       "group": "",
       "featured": false,
@@ -2686,50 +2582,11 @@
       "order": 17
     },
     {
-      "id": "bolos-confeitados-18",
-      "name": "Delícia de Morango",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/62c3470701c87a6c1e7c635b.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 18
-    },
-    {
-      "id": "bolos-confeitados-19",
-      "name": "Mil Folhas",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/4a442a756c7c1ce8fcd2219d.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 19
-    },
-    {
       "id": "bolos-confeitados-20",
       "name": "Sensação",
-      "price": 69.9,
+      "price": 74.9,
       "description": "",
       "image": "/assets/menu/133bfb89b2b67efe0e2e6c2d.webp",
-      "priceUnit": "kg",
-      "group": "",
-      "featured": false,
-      "available": true,
-      "categoryId": "bolos-confeitados",
-      "order": 20
-    },
-    {
-      "id": "bolos-confeitados-21",
-      "name": "Merengue de Morango",
-      "price": 69.9,
-      "description": "",
-      "image": "/assets/menu/06a37f1231e193da487034ae.webp",
       "priceUnit": "kg",
       "group": "",
       "featured": false,
@@ -2748,7 +2605,7 @@
       "featured": false,
       "available": true,
       "categoryId": "bolos-confeitados",
-      "order": 22
+      "order": 12
     },
     {
       "id": "items-377fd8ab-75e6-4cae-be64-60bda207db69",
@@ -2866,6 +2723,188 @@
       "available": true,
       "categoryId": "bebidas",
       "order": 19
+    },
+    {
+      "id": "items-1a7d8e85-d5d2-4114-87de-193de11aa837",
+      "name": "4 Leites",
+      "price": 76.9,
+      "description": "",
+      "image": "/assets/menu/62c3470701c87a6c1e7c635b.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 0
+    },
+    {
+      "id": "items-cafdc946-c3c1-4d5f-a48c-4f412eda587e",
+      "name": "Abacaxi",
+      "price": 69.9,
+      "description": "",
+      "image": "/assets/menu/06a37f1231e193da487034ae.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 1
+    },
+    {
+      "id": "items-f530f115-332d-4360-84a6-f27b2fb43f7b",
+      "name": "Beijinho",
+      "price": 69.9,
+      "description": "",
+      "image": "/assets/menu/ed1a3a64e7ee4ce158bc56bd.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 2
+    },
+    {
+      "id": "items-571712eb-5d90-437a-bc9f-0f5a2ddb35b9",
+      "name": "Chocolate",
+      "price": 69.9,
+      "description": "",
+      "image": "/assets/menu/a6032fde58d48a96ab57682e.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 4
+    },
+    {
+      "id": "items-878678d5-e6d0-466b-b3b9-5b85fe8c4ce1",
+      "name": "Coco",
+      "price": 69.9,
+      "description": "",
+      "image": "/assets/menu/ed1a3a64e7ee4ce158bc56bd.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 5
+    },
+    {
+      "id": "items-60cef4a2-9d65-4daf-ae34-0fb256736041",
+      "name": "Floresta Meio a Meio com Morango ou Cereja",
+      "price": 69.9,
+      "description": "",
+      "image": "/assets/menu/5be27b02d308a98aea84f36c.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 9
+    },
+    {
+      "id": "items-3fb51a16-8839-47c9-8ee7-0897bd4a336f",
+      "name": "Maracujá",
+      "price": 69.9,
+      "description": "",
+      "image": "/assets/menu/d00af02ebe438d28a6b998b6.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 13
+    },
+    {
+      "id": "items-af5c3b83-9926-4adf-8e4c-16d9944c75ce",
+      "name": "Creme de Confeiteiro com Morango",
+      "price": 72.9,
+      "description": "",
+      "image": "/assets/menu/f3d9a39df5f7c539d70a099f.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 14
+    },
+    {
+      "id": "items-591f6403-45b0-4704-a348-991dbc44eb5f",
+      "name": "Ninho e Avelã",
+      "price": 76.9,
+      "description": "",
+      "image": "/assets/menu/358ffa1759f10fa08582a890.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 16
+    },
+    {
+      "id": "items-35bda3e5-70d8-4aa6-9daa-cc554cc84b2f",
+      "name": "Pudim",
+      "price": 74.9,
+      "description": "",
+      "image": "/assets/menu/24f2e995883f32f480da4a27.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 19
+    },
+    {
+      "id": "items-8aa1c498-e9d4-47c9-8fb4-7ad0980318df",
+      "name": "Red Velvet",
+      "price": 72.9,
+      "description": "",
+      "image": "/assets/menu/06a37f1231e193da487034ae.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 20
+    },
+    {
+      "id": "items-342f6958-90a0-4f38-a7c1-51fd258443a9",
+      "name": "Suflair",
+      "price": 74.9,
+      "description": "",
+      "image": "/assets/menu/99a1869286a1a699c4c7007e.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 23
+    },
+    {
+      "id": "items-fd585d18-20f6-43e1-9781-b7ecaf41c899",
+      "name": "Anos 80/90",
+      "price": 74.9,
+      "description": "",
+      "image": "/assets/menu/86850dd52270538b097a7230.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 25
+    },
+    {
+      "id": "items-c520479b-8bc8-405a-9275-ff7d3835637c",
+      "name": "Pêssego",
+      "price": 72.9,
+      "description": "",
+      "image": "/assets/menu/4a442a756c7c1ce8fcd2219d.webp",
+      "priceUnit": "kg",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "bolos-confeitados",
+      "order": 26
     }
   ],
   "promotions": [],
@@ -2885,5 +2924,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-12T12:18:07.077Z"
+  "updatedAt": "2026-11-12T14:43:56.746Z"
 }
