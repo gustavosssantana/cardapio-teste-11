@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": "f7b35797-2d15-453d-890a-2acb855545c9",
+  "revision": "914320d2-abfa-43f4-ba3a-2fa61f5e05d8",
   "name": "Cardápio Center Chic",
   "baseUrl": "https://cardapio.vercel.app",
   "features": {
@@ -447,7 +447,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 3
+      "order": 4
     },
     {
       "id": "matinais-4",
@@ -460,7 +460,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 4
+      "order": 5
     },
     {
       "id": "matinais-5",
@@ -473,7 +473,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 5
+      "order": 6
     },
     {
       "id": "matinais-6",
@@ -486,7 +486,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 6
+      "order": 7
     },
     {
       "id": "items-192e6aac-001a-4b67-929b-ee0adddba5c0",
@@ -499,7 +499,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 7
+      "order": 8
     },
     {
       "id": "items-5dcaed7c-3d87-4519-8af2-e092ad5a7b87",
@@ -512,7 +512,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 8
+      "order": 9
     },
     {
       "id": "matinais-7",
@@ -525,7 +525,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 9
+      "order": 10
     },
     {
       "id": "matinais-8",
@@ -538,7 +538,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 10
+      "order": 11
     },
     {
       "id": "matinais-9",
@@ -551,7 +551,7 @@
       "featured": false,
       "available": true,
       "categoryId": "matinais",
-      "order": 11
+      "order": 12
     },
     {
       "id": "salgados-0",
@@ -655,7 +655,7 @@
       "featured": false,
       "available": true,
       "categoryId": "salgados",
-      "order": 7
+      "order": 8
     },
     {
       "id": "salgados-8",
@@ -668,7 +668,7 @@
       "featured": false,
       "available": true,
       "categoryId": "salgados",
-      "order": 8
+      "order": 9
     },
     {
       "id": "salgados-9",
@@ -681,7 +681,7 @@
       "featured": false,
       "available": true,
       "categoryId": "salgados",
-      "order": 9
+      "order": 10
     },
     {
       "id": "salgados-10",
@@ -694,7 +694,7 @@
       "featured": false,
       "available": true,
       "categoryId": "salgados",
-      "order": 10
+      "order": 11
     },
     {
       "id": "croissant-0",
@@ -2194,7 +2194,7 @@
     {
       "id": "adicionais-4",
       "name": "Manteiga/Requeijão",
-      "price": 3.9,
+      "price": 3.8,
       "description": "",
       "image": "/assets/menu/d3bb1a69847e82ca76743a19.webp",
       "priceUnit": "",
@@ -2207,7 +2207,7 @@
     {
       "id": "adicionais-5",
       "name": "Ovo",
-      "price": 3.9,
+      "price": 3.8,
       "description": "",
       "image": "/assets/menu/9df8dc9cc895598aa99d423b.webp",
       "priceUnit": "",
@@ -2905,6 +2905,32 @@
       "available": true,
       "categoryId": "bolos-confeitados",
       "order": 26
+    },
+    {
+      "id": "items-8c0d9dd7-48b8-42f7-a786-a0bd6d1982c3",
+      "name": "Pão com Nutella",
+      "price": 11.9,
+      "description": "",
+      "image": "/assets/menu/08aa03a7061638db1d05a919.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "matinais",
+      "order": 3
+    },
+    {
+      "id": "items-8c27edc7-a822-4fa7-9224-b1d4afa04b13",
+      "name": "Pão de Queijo com Nutella",
+      "price": 12.9,
+      "description": "",
+      "image": "/assets/menu/2b5238f3991829cffdcb7c7b.webp",
+      "priceUnit": "",
+      "group": "",
+      "featured": false,
+      "available": true,
+      "categoryId": "salgados",
+      "order": 7
     }
   ],
   "promotions": [],
@@ -2924,5 +2950,5 @@
     "terms": [],
     "faq": []
   },
-  "updatedAt": "2026-11-12T14:43:56.746Z"
+  "updatedAt": "2026-11-12T17:34:40.663Z"
 }
