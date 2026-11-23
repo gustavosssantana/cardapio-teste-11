@@ -37,6 +37,9 @@ body{margin:0;background:var(--fundo);color:var(--tinta);font-family:var(--f-tex
 button{font:inherit;color:inherit}
 a{color:inherit}
 .embrulho{max-width:780px;margin:0 auto;padding-inline:16px}
+/* celular: a página nunca anda pros lados; só os carrosséis rolam na horizontal */
+html,body{overflow-x:clip;overscroll-behavior-x:none}
+.chips,.carrossel{overscroll-behavior-x:contain}
 
 /* ================= Capa ================= */
 .capa{position:relative;color:#fff;background:
